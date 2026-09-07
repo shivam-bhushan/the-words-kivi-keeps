@@ -1,11 +1,88 @@
-{"type": "dictation", "raw": "sarvam raised a new round", "formatted": "Sarvam raised a new round."}
-{"type": "dictation", "raw": "the sarvam team shipped the app", "formatted": "The Sarvam team shipped the app."}
-{"type": "dictation", "raw": "ask aditya to review the sarvam kiwi service", "formatted": "Ask Aditya to review the Sarvam Kiwi service."}
+{"type": "dictation", "raw": "ask priya to review the pull request", "formatted": "Ask Priya to review the pull request."}
+{"type": "dictation", "raw": "can you loop in priya before the call", "formatted": "Can you loop in Priya before the call?"}
+{"type": "dictation", "raw": "send the invoice to priya please", "formatted": "Send the invoice to Priya please."}
+{"type": "dictation", "raw": "ask meera to review the pull request", "formatted": "Ask Meera to review the pull request."}
+{"type": "dictation", "raw": "can you loop in meera before the call", "formatted": "Can you loop in Meera before the call?"}
+{"type": "dictation", "raw": "send the invoice to meera please", "formatted": "Send the invoice to Meera please."}
+{"type": "dictation", "raw": "ask nikhil to review the pull request", "formatted": "Ask Nikhil to review the pull request."}
+{"type": "dictation", "raw": "can you loop in nikhil before the call", "formatted": "Can you loop in Nikhil before the call?"}
+{"type": "dictation", "raw": "send the invoice to nikhil please", "formatted": "Send the invoice to Nikhil please."}
+{"type": "dictation", "raw": "ask ananya to review the pull request", "formatted": "Ask Ananya to review the pull request."}
+{"type": "dictation", "raw": "can you loop in ananya before the call", "formatted": "Can you loop in Ananya before the call?"}
+{"type": "dictation", "raw": "send the invoice to ananya please", "formatted": "Send the invoice to Ananya please."}
+{"type": "dictation", "raw": "ask sana to review the pull request", "formatted": "Ask Sana to review the pull request."}
+{"type": "dictation", "raw": "can you loop in sana before the call", "formatted": "Can you loop in Sana before the call?"}
+{"type": "dictation", "raw": "send the invoice to sana please", "formatted": "Send the invoice to Sana please."}
+{"type": "dictation", "raw": "ask arjun to review the pull request", "formatted": "Ask Arjun to review the pull request."}
+{"type": "dictation", "raw": "can you loop in arjun before the call", "formatted": "Can you loop in Arjun before the call?"}
+{"type": "dictation", "raw": "send the invoice to arjun please", "formatted": "Send the invoice to Arjun please."}
+{"type": "dictation", "raw": "ask yash to review the pull request", "formatted": "Ask Yash to review the pull request."}
+{"type": "dictation", "raw": "can you loop in yash before the call", "formatted": "Can you loop in Yash before the call?"}
+{"type": "dictation", "raw": "send the invoice to yash please", "formatted": "Send the invoice to Yash please."}
+{"type": "dictation", "raw": "ask aarav to review the pull request", "formatted": "Ask Aarav to review the pull request."}
+{"type": "dictation", "raw": "can you loop in aarav before the call", "formatted": "Can you loop in Aarav before the call?"}
+{"type": "dictation", "raw": "send the invoice to aarav please", "formatted": "Send the invoice to Aarav please."}
+{"type": "dictation", "raw": "ask kavya to review the pull request", "formatted": "Ask Kavya to review the pull request."}
+{"type": "dictation", "raw": "can you loop in kavya before the call", "formatted": "Can you loop in Kavya before the call?"}
+{"type": "dictation", "raw": "send the invoice to kavya please", "formatted": "Send the invoice to Kavya please."}
+{"type": "dictation", "raw": "ask riya to review the pull request", "formatted": "Ask Riya to review the pull request."}
+{"type": "dictation", "raw": "can you loop in riya before the call", "formatted": "Can you loop in Riya before the call?"}
+{"type": "dictation", "raw": "send the invoice to riya please", "formatted": "Send the invoice to Riya please."}
+{"type": "dictation", "raw": "ask aditya to review the pull request", "formatted": "Ask Aditya to review the pull request."}
+{"type": "dictation", "raw": "can you loop in aditya before the call", "formatted": "Can you loop in Aditya before the call?"}
+{"type": "dictation", "raw": "send the invoice to aditya please", "formatted": "Send the invoice to Aditya please."}
 {"type": "correction", "wrong": "Aditya", "right": "Aaditya"}
-{"type": "correction", "wrong": "Kiwi", "right": "Kivi"}
-{"type": "dictation", "raw": "priya joined the design team", "formatted": "Priya joined the design team."}
-{"type": "dictation", "raw": "sync with priya about onboarding", "formatted": "Sync with Priya about onboarding."}
-{"type": "dictation", "raw": "priya sent the mocks", "formatted": "Priya sent the mocks."}
-{"type": "dictation", "raw": "share the figma link", "formatted": "Share the Figma link."}
-{"type": "dictation", "raw": "ankit filed the bug", "formatted": "Ankit filed the bug."}
-{"type": "dictation", "raw": "ankith pushed a fix", "formatted": "Ankith pushed a fix."}
+{"type": "dictation", "raw": "ask ishan to review the pull request", "formatted": "Ask Ishan to review the pull request."}
+{"type": "dictation", "raw": "can you loop in ishan before the call", "formatted": "Can you loop in Ishan before the call?"}
+{"type": "dictation", "raw": "send the invoice to ishan please", "formatted": "Send the invoice to Ishan please."}
+{"type": "correction", "wrong": "Ishan", "right": "Ishaan"}
+{"type": "dictation", "raw": "ask vihan to review the pull request", "formatted": "Ask Vihan to review the pull request."}
+{"type": "dictation", "raw": "can you loop in vihan before the call", "formatted": "Can you loop in Vihan before the call?"}
+{"type": "dictation", "raw": "send the invoice to vihan please", "formatted": "Send the invoice to Vihan please."}
+{"type": "correction", "wrong": "Vihan", "right": "Vihaan"}
+{"type": "dictation", "raw": "ask simren to review the pull request", "formatted": "Ask Simren to review the pull request."}
+{"type": "dictation", "raw": "can you loop in simren before the call", "formatted": "Can you loop in Simren before the call?"}
+{"type": "dictation", "raw": "send the invoice to simren please", "formatted": "Send the invoice to Simren please."}
+{"type": "correction", "wrong": "Simren", "right": "Simran"}
+{"type": "dictation", "raw": "ask rohaan to review the pull request", "formatted": "Ask Rohaan to review the pull request."}
+{"type": "dictation", "raw": "can you loop in rohaan before the call", "formatted": "Can you loop in Rohaan before the call?"}
+{"type": "dictation", "raw": "send the invoice to rohaan please", "formatted": "Send the invoice to Rohaan please."}
+{"type": "correction", "wrong": "Rohaan", "right": "Rohan"}
+{"type": "dictation", "raw": "ask dia to review the pull request", "formatted": "Ask Dia to review the pull request."}
+{"type": "dictation", "raw": "can you loop in dia before the call", "formatted": "Can you loop in Dia before the call?"}
+{"type": "dictation", "raw": "send the invoice to dia please", "formatted": "Send the invoice to Dia please."}
+{"type": "correction", "wrong": "Dia", "right": "Diya"}
+{"type": "dictation", "raw": "ask ankit to review the pull request", "formatted": "Ask Ankit to review the pull request."}
+{"type": "dictation", "raw": "can you loop in ankith before the call", "formatted": "Can you loop in Ankith before the call?"}
+{"type": "dictation", "raw": "ask cabir to review the pull request", "formatted": "Ask Cabir to review the pull request."}
+{"type": "dictation", "raw": "can you loop in kabir before the call", "formatted": "Can you loop in Kabir before the call?"}
+{"type": "dictation", "raw": "ask tanavi to review the pull request", "formatted": "Ask Tanavi to review the pull request."}
+{"type": "dictation", "raw": "ask devanash to review the pull request", "formatted": "Ask Devanash to review the pull request."}
+{"type": "correction", "wrong": "kiwi", "right": "Kivi"}
+{"type": "correction", "wrong": "lift", "right": "Lyft"}
+{"type": "correction", "wrong": "zoom", "right": "Xoom"}
+{"type": "correction", "wrong": "zero", "right": "Xero"}
+{"type": "correction", "wrong": "fire", "right": "Fyre"}
+{"type": "correction", "wrong": "Flicker", "right": "Flickr"}
+{"type": "dictation", "raw": "push the update to fiverr before lunch", "formatted": "Push the update to Fiverr before lunch."}
+{"type": "dictation", "raw": "check if fiverr synced the latest changes", "formatted": "Check if Fiverr synced the latest changes."}
+{"type": "dictation", "raw": "open fiverr and pull the latest board", "formatted": "Open Fiverr and pull the latest board."}
+{"type": "dictation", "raw": "push the update to scribd before lunch", "formatted": "Push the update to Scribd before lunch."}
+{"type": "dictation", "raw": "check if scribd synced the latest changes", "formatted": "Check if Scribd synced the latest changes."}
+{"type": "dictation", "raw": "open scribd and pull the latest board", "formatted": "Open Scribd and pull the latest board."}
+{"type": "dictation", "raw": "push the update to sarvam before lunch", "formatted": "Push the update to Sarvam before lunch."}
+{"type": "dictation", "raw": "check if sarvam synced the latest changes", "formatted": "Check if Sarvam synced the latest changes."}
+{"type": "dictation", "raw": "open sarvam and pull the latest board", "formatted": "Open Sarvam and pull the latest board."}
+{"type": "dictation", "raw": "push the update to figma before lunch", "formatted": "Push the update to Figma before lunch."}
+{"type": "dictation", "raw": "check if figma synced the latest changes", "formatted": "Check if Figma synced the latest changes."}
+{"type": "dictation", "raw": "open figma and pull the latest board", "formatted": "Open Figma and pull the latest board."}
+{"type": "dictation", "raw": "push the update to coda before lunch", "formatted": "Push the update to Coda before lunch."}
+{"type": "dictation", "raw": "check if coda synced the latest changes", "formatted": "Check if Coda synced the latest changes."}
+{"type": "dictation", "raw": "open coda and pull the latest board", "formatted": "Open Coda and pull the latest board."}
+{"type": "dictation", "raw": "push the update to asana before lunch", "formatted": "Push the update to Asana before lunch."}
+{"type": "dictation", "raw": "check if asana synced the latest changes", "formatted": "Check if Asana synced the latest changes."}
+{"type": "dictation", "raw": "open asana and pull the latest board", "formatted": "Open Asana and pull the latest board."}
+{"type": "dictation", "raw": "push the update to canva before lunch", "formatted": "Push the update to Canva before lunch."}
+{"type": "dictation", "raw": "check if canva synced the latest changes", "formatted": "Check if Canva synced the latest changes."}
+{"type": "dictation", "raw": "open canva and pull the latest board", "formatted": "Open Canva and pull the latest board."}
+{"type": "dictation", "raw": "push the update to looum before lunch", "formatted": "Push the update to Looum before lunch."}

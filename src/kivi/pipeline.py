@@ -112,7 +112,13 @@ def _apply_memories(conn, dictation_id, formatted_text, memories) -> tuple[str, 
 
         if len(actives) == 1:
             m = actives[0]
-            if is_common_english_word(stem):
+            # Check both spellings' commonness, not just the token as written:
+            # a stylized canonical form can itself be common (e.g. "Flickr" at
+            # 3.33 zipf) even when the ordinary-word spelling of the same
+            # phonetic cluster sits just under the threshold (e.g. "flicker"
+            # at 3.10) -- checking only `stem` let that case slip past the
+            # caution entirely.
+            if is_common_english_word(stem) or is_common_english_word(m["canonical_form"]):
                 if m["correction_count"] == 0:
                     decisions.append(Decision(
                         token=token, action="abstained_common_word",

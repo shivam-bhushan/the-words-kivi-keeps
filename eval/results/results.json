@@ -1,36 +1,624 @@
 {
   "summary": {
-    "total_cases": 15,
+    "total_cases": 58,
     "outcomes": {
-      "useful_intervention": 6,
-      "correct_abstention": 8,
-      "incorrect_intervention": 1,
+      "useful_intervention": 32,
+      "correct_abstention": 20,
+      "incorrect_intervention": 6,
       "missed_correction": 0
     },
-    "intervention_precision": 0.857,
+    "intervention_precision": 0.842,
     "intervention_recall": 1.0,
-    "avg_latency_ms": 0.46,
-    "max_latency_ms": 0.59,
+    "avg_latency_ms": 0.7,
+    "max_latency_ms": 0.84,
     "llm_calls": 0,
     "llm_cost_usd": 0.0,
-    "db_size_bytes_after_seed_plus_one_dictation": 45056,
+    "db_size_bytes_after_seed_plus_one_dictation": 81920,
     "db_rows_last_run": {
-      "dictations": 12,
-      "memory_entries": 6,
-      "memory_variants": 12,
-      "decisions": 18
+      "dictations": 89,
+      "memory_entries": 34,
+      "memory_variants": 86,
+      "decisions": 95
     }
   },
   "cases": [
     {
-      "id": "flagship",
-      "name": "Brief's flagship example: two corrections in one sentence",
+      "id": "promoted-priya",
+      "name": "Repetition-promoted 'Priya' fixes a fresh misspelling",
       "inputs": {
-        "raw_asr": "ask aditya to review the sarvam kiwi service",
-        "formatted": "Ask Aditya to review the Sarvam Kiwi service."
+        "raw_asr": "forward this thread to pria",
+        "formatted": "Forward this thread to Pria."
       },
-      "expected": "Ask Aaditya to review the Sarvam Kivi service.",
-      "actual": "Ask Aaditya to review the Sarvam Kivi service.",
+      "expected": "Forward this thread to Priya.",
+      "actual": "Forward this thread to Priya.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Pria",
+          "action": "applied",
+          "reason": "'Pria' phonetically matches active memory 'Priya' (confidence 0.75).",
+          "confidence": 0.75,
+          "replacement": "Priya"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 1,
+          "user_id": "default",
+          "canonical_form": "Priya",
+          "phonetic_key": "PRY",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.75,
+          "evidence_count": 3,
+          "created_at": "2026-09-07 14:03:25",
+          "updated_at": "2026-09-07 14:03:25",
+          "last_seen_at": "2026-09-07 14:03:25",
+          "correction_count": 0
+        }
+      ],
+      "latency_ms": 0.77
+    },
+    {
+      "id": "promoted-meera",
+      "name": "Repetition-promoted 'Meera' fixes a fresh misspelling",
+      "inputs": {
+        "raw_asr": "forward this thread to meira",
+        "formatted": "Forward this thread to Meira."
+      },
+      "expected": "Forward this thread to Meera.",
+      "actual": "Forward this thread to Meera.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Meira",
+          "action": "applied",
+          "reason": "'Meira' phonetically matches active memory 'Meera' (confidence 0.75).",
+          "confidence": 0.75,
+          "replacement": "Meera"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 2,
+          "user_id": "default",
+          "canonical_form": "Meera",
+          "phonetic_key": "MR",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.75,
+          "evidence_count": 3,
+          "created_at": "2026-09-07 14:03:25",
+          "updated_at": "2026-09-07 14:03:25",
+          "last_seen_at": "2026-09-07 14:03:25",
+          "correction_count": 0
+        }
+      ],
+      "latency_ms": 0.78
+    },
+    {
+      "id": "promoted-nikhil",
+      "name": "Repetition-promoted 'Nikhil' fixes a fresh misspelling",
+      "inputs": {
+        "raw_asr": "forward this thread to nikil",
+        "formatted": "Forward this thread to Nikil."
+      },
+      "expected": "Forward this thread to Nikhil.",
+      "actual": "Forward this thread to Nikhil.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Nikil",
+          "action": "applied",
+          "reason": "'Nikil' phonetically matches active memory 'Nikhil' (confidence 0.75).",
+          "confidence": 0.75,
+          "replacement": "Nikhil"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 3,
+          "user_id": "default",
+          "canonical_form": "Nikhil",
+          "phonetic_key": "NKHL",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.75,
+          "evidence_count": 3,
+          "created_at": "2026-09-07 14:03:25",
+          "updated_at": "2026-09-07 14:03:25",
+          "last_seen_at": "2026-09-07 14:03:25",
+          "correction_count": 0
+        }
+      ],
+      "latency_ms": 0.71
+    },
+    {
+      "id": "promoted-ananya",
+      "name": "Repetition-promoted 'Ananya' fixes a fresh misspelling",
+      "inputs": {
+        "raw_asr": "forward this thread to ananiya",
+        "formatted": "Forward this thread to Ananiya."
+      },
+      "expected": "Forward this thread to Ananya.",
+      "actual": "Forward this thread to Ananya.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Ananiya",
+          "action": "applied",
+          "reason": "'Ananiya' phonetically matches active memory 'Ananya' (confidence 0.75).",
+          "confidence": 0.75,
+          "replacement": "Ananya"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 4,
+          "user_id": "default",
+          "canonical_form": "Ananya",
+          "phonetic_key": "ANNY",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.75,
+          "evidence_count": 3,
+          "created_at": "2026-09-07 14:03:25",
+          "updated_at": "2026-09-07 14:03:25",
+          "last_seen_at": "2026-09-07 14:03:25",
+          "correction_count": 0
+        }
+      ],
+      "latency_ms": 0.79
+    },
+    {
+      "id": "promoted-sana",
+      "name": "Repetition-promoted 'Sana' fixes a fresh misspelling",
+      "inputs": {
+        "raw_asr": "forward this thread to sanaa",
+        "formatted": "Forward this thread to Sanaa."
+      },
+      "expected": "Forward this thread to Sana.",
+      "actual": "Forward this thread to Sana.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Sanaa",
+          "action": "applied",
+          "reason": "'Sanaa' phonetically matches active memory 'Sana' (confidence 0.75).",
+          "confidence": 0.75,
+          "replacement": "Sana"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 5,
+          "user_id": "default",
+          "canonical_form": "Sana",
+          "phonetic_key": "SN",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.75,
+          "evidence_count": 3,
+          "created_at": "2026-09-07 14:03:25",
+          "updated_at": "2026-09-07 14:03:25",
+          "last_seen_at": "2026-09-07 14:03:25",
+          "correction_count": 0
+        }
+      ],
+      "latency_ms": 0.71
+    },
+    {
+      "id": "promoted-arjun",
+      "name": "Repetition-promoted 'Arjun' fixes a fresh misspelling",
+      "inputs": {
+        "raw_asr": "forward this thread to arjoon",
+        "formatted": "Forward this thread to Arjoon."
+      },
+      "expected": "Forward this thread to Arjun.",
+      "actual": "Forward this thread to Arjun.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Arjoon",
+          "action": "applied",
+          "reason": "'Arjoon' phonetically matches active memory 'Arjun' (confidence 0.75).",
+          "confidence": 0.75,
+          "replacement": "Arjun"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 6,
+          "user_id": "default",
+          "canonical_form": "Arjun",
+          "phonetic_key": "ARJN",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.75,
+          "evidence_count": 3,
+          "created_at": "2026-09-07 14:03:25",
+          "updated_at": "2026-09-07 14:03:25",
+          "last_seen_at": "2026-09-07 14:03:25",
+          "correction_count": 0
+        }
+      ],
+      "latency_ms": 0.74
+    },
+    {
+      "id": "promoted-yash",
+      "name": "Repetition-promoted 'Yash' fixes a fresh misspelling",
+      "inputs": {
+        "raw_asr": "forward this thread to yesh",
+        "formatted": "Forward this thread to Yesh."
+      },
+      "expected": "Forward this thread to Yash.",
+      "actual": "Forward this thread to Yash.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Yesh",
+          "action": "applied",
+          "reason": "'Yesh' phonetically matches active memory 'Yash' (confidence 0.75).",
+          "confidence": 0.75,
+          "replacement": "Yash"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 7,
+          "user_id": "default",
+          "canonical_form": "Yash",
+          "phonetic_key": "YX",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.75,
+          "evidence_count": 3,
+          "created_at": "2026-09-07 14:03:25",
+          "updated_at": "2026-09-07 14:03:25",
+          "last_seen_at": "2026-09-07 14:03:25",
+          "correction_count": 0
+        }
+      ],
+      "latency_ms": 0.7
+    },
+    {
+      "id": "promoted-aarav",
+      "name": "Repetition-promoted 'Aarav' fixes a fresh misspelling",
+      "inputs": {
+        "raw_asr": "forward this thread to arav",
+        "formatted": "Forward this thread to Arav."
+      },
+      "expected": "Forward this thread to Aarav.",
+      "actual": "Forward this thread to Aarav.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Arav",
+          "action": "applied",
+          "reason": "'Arav' phonetically matches active memory 'Aarav' (confidence 0.75).",
+          "confidence": 0.75,
+          "replacement": "Aarav"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 8,
+          "user_id": "default",
+          "canonical_form": "Aarav",
+          "phonetic_key": "RF",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.75,
+          "evidence_count": 3,
+          "created_at": "2026-09-07 14:03:25",
+          "updated_at": "2026-09-07 14:03:25",
+          "last_seen_at": "2026-09-07 14:03:25",
+          "correction_count": 0
+        }
+      ],
+      "latency_ms": 0.69
+    },
+    {
+      "id": "promoted-kavya",
+      "name": "Repetition-promoted 'Kavya' fixes a fresh misspelling",
+      "inputs": {
+        "raw_asr": "forward this thread to kaviya",
+        "formatted": "Forward this thread to Kaviya."
+      },
+      "expected": "Forward this thread to Kavya.",
+      "actual": "Forward this thread to Kavya.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Kaviya",
+          "action": "applied",
+          "reason": "'Kaviya' phonetically matches active memory 'Kavya' (confidence 0.75).",
+          "confidence": 0.75,
+          "replacement": "Kavya"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 9,
+          "user_id": "default",
+          "canonical_form": "Kavya",
+          "phonetic_key": "KFY",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.75,
+          "evidence_count": 3,
+          "created_at": "2026-09-07 14:03:25",
+          "updated_at": "2026-09-07 14:03:25",
+          "last_seen_at": "2026-09-07 14:03:25",
+          "correction_count": 0
+        }
+      ],
+      "latency_ms": 0.73
+    },
+    {
+      "id": "promoted-riya",
+      "name": "Repetition-promoted 'Riya' fixes a fresh misspelling",
+      "inputs": {
+        "raw_asr": "forward this thread to riyaa",
+        "formatted": "Forward this thread to Riyaa."
+      },
+      "expected": "Forward this thread to Riya.",
+      "actual": "Forward this thread to Riya.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Riyaa",
+          "action": "applied",
+          "reason": "'Riyaa' phonetically matches active memory 'Riya' (confidence 0.75).",
+          "confidence": 0.75,
+          "replacement": "Riya"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 10,
+          "user_id": "default",
+          "canonical_form": "Riya",
+          "phonetic_key": "RY",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.75,
+          "evidence_count": 3,
+          "created_at": "2026-09-07 14:03:25",
+          "updated_at": "2026-09-07 14:03:25",
+          "last_seen_at": "2026-09-07 14:03:25",
+          "correction_count": 0
+        }
+      ],
+      "latency_ms": 0.68
+    },
+    {
+      "id": "already-correct-priya",
+      "name": "'Priya' already spelled right: no decision, just quiet evidence",
+      "inputs": {
+        "raw_asr": "tell priya the deck is ready for review",
+        "formatted": "Tell Priya the deck is ready for review."
+      },
+      "expected": "Tell Priya the deck is ready for review.",
+      "actual": "Tell Priya the deck is ready for review.",
+      "should_intervene": false,
+      "outcome": "correct_abstention",
+      "decisions": [
+        {
+          "token": "for",
+          "action": "abstained_common_word",
+          "reason": "'for' is common English and the formatter kept it lowercase, so context suggests the ordinary word, not 'Fyre'. Leaving it alone.",
+          "confidence": 0.95,
+          "replacement": null
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 1,
+          "user_id": "default",
+          "canonical_form": "Priya",
+          "phonetic_key": "PRY",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.75,
+          "evidence_count": 3,
+          "created_at": "2026-09-07 14:03:25",
+          "updated_at": "2026-09-07 14:03:25",
+          "last_seen_at": "2026-09-07 14:03:25",
+          "correction_count": 0
+        },
+        {
+          "id": 25,
+          "user_id": "default",
+          "canonical_form": "Fyre",
+          "phonetic_key": "FR",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:25",
+          "updated_at": "2026-09-07 14:03:25",
+          "last_seen_at": "2026-09-07 14:03:25",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.76
+    },
+    {
+      "id": "already-correct-meera",
+      "name": "'Meera' already spelled right: no decision, just quiet evidence",
+      "inputs": {
+        "raw_asr": "tell meera the deck is ready for review",
+        "formatted": "Tell Meera the deck is ready for review."
+      },
+      "expected": "Tell Meera the deck is ready for review.",
+      "actual": "Tell Meera the deck is ready for review.",
+      "should_intervene": false,
+      "outcome": "correct_abstention",
+      "decisions": [
+        {
+          "token": "for",
+          "action": "abstained_common_word",
+          "reason": "'for' is common English and the formatter kept it lowercase, so context suggests the ordinary word, not 'Fyre'. Leaving it alone.",
+          "confidence": 0.95,
+          "replacement": null
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 2,
+          "user_id": "default",
+          "canonical_form": "Meera",
+          "phonetic_key": "MR",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.75,
+          "evidence_count": 3,
+          "created_at": "2026-09-07 14:03:25",
+          "updated_at": "2026-09-07 14:03:25",
+          "last_seen_at": "2026-09-07 14:03:25",
+          "correction_count": 0
+        },
+        {
+          "id": 25,
+          "user_id": "default",
+          "canonical_form": "Fyre",
+          "phonetic_key": "FR",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:25",
+          "updated_at": "2026-09-07 14:03:25",
+          "last_seen_at": "2026-09-07 14:03:25",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.74
+    },
+    {
+      "id": "already-correct-nikhil",
+      "name": "'Nikhil' already spelled right: no decision, just quiet evidence",
+      "inputs": {
+        "raw_asr": "tell nikhil the deck is ready for review",
+        "formatted": "Tell Nikhil the deck is ready for review."
+      },
+      "expected": "Tell Nikhil the deck is ready for review.",
+      "actual": "Tell Nikhil the deck is ready for review.",
+      "should_intervene": false,
+      "outcome": "correct_abstention",
+      "decisions": [
+        {
+          "token": "for",
+          "action": "abstained_common_word",
+          "reason": "'for' is common English and the formatter kept it lowercase, so context suggests the ordinary word, not 'Fyre'. Leaving it alone.",
+          "confidence": 0.95,
+          "replacement": null
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 3,
+          "user_id": "default",
+          "canonical_form": "Nikhil",
+          "phonetic_key": "NKHL",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.75,
+          "evidence_count": 3,
+          "created_at": "2026-09-07 14:03:25",
+          "updated_at": "2026-09-07 14:03:25",
+          "last_seen_at": "2026-09-07 14:03:25",
+          "correction_count": 0
+        },
+        {
+          "id": 25,
+          "user_id": "default",
+          "canonical_form": "Fyre",
+          "phonetic_key": "FR",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:25",
+          "updated_at": "2026-09-07 14:03:25",
+          "last_seen_at": "2026-09-07 14:03:25",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.72
+    },
+    {
+      "id": "already-correct-ananya",
+      "name": "'Ananya' already spelled right: no decision, just quiet evidence",
+      "inputs": {
+        "raw_asr": "tell ananya the deck is ready for review",
+        "formatted": "Tell Ananya the deck is ready for review."
+      },
+      "expected": "Tell Ananya the deck is ready for review.",
+      "actual": "Tell Ananya the deck is ready for review.",
+      "should_intervene": false,
+      "outcome": "correct_abstention",
+      "decisions": [
+        {
+          "token": "for",
+          "action": "abstained_common_word",
+          "reason": "'for' is common English and the formatter kept it lowercase, so context suggests the ordinary word, not 'Fyre'. Leaving it alone.",
+          "confidence": 0.95,
+          "replacement": null
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 4,
+          "user_id": "default",
+          "canonical_form": "Ananya",
+          "phonetic_key": "ANNY",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.75,
+          "evidence_count": 3,
+          "created_at": "2026-09-07 14:03:26",
+          "updated_at": "2026-09-07 14:03:26",
+          "last_seen_at": "2026-09-07 14:03:26",
+          "correction_count": 0
+        },
+        {
+          "id": 25,
+          "user_id": "default",
+          "canonical_form": "Fyre",
+          "phonetic_key": "FR",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:26",
+          "updated_at": "2026-09-07 14:03:26",
+          "last_seen_at": "2026-09-07 14:03:26",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.76
+    },
+    {
+      "id": "corrected-aaditya",
+      "name": "Explicit correction for 'Aaditya' fires on a fresh misspelling",
+      "inputs": {
+        "raw_asr": "aditya mentioned the deadline moved to friday",
+        "formatted": "Aditya mentioned the deadline moved to Friday."
+      },
+      "expected": "Aaditya mentioned the deadline moved to Friday.",
+      "actual": "Aaditya mentioned the deadline moved to Friday.",
       "should_intervene": true,
       "outcome": "useful_intervention",
       "decisions": [
@@ -42,106 +630,401 @@
           "replacement": "Aaditya"
         },
         {
-          "token": "Kiwi",
-          "action": "applied",
-          "reason": "'Kiwi' phonetically matches active memory 'Kivi' (confidence 0.95).",
-          "confidence": 0.95,
-          "replacement": "Kivi"
+          "token": "Friday",
+          "action": "abstained_no_match",
+          "reason": "'Friday' looks like a personal term but no memory matches it.",
+          "confidence": null,
+          "replacement": null
         }
       ],
       "relevant_memory_state": [
         {
-          "id": 1,
+          "id": 11,
           "user_id": "default",
-          "canonical_form": "Sarvam",
-          "phonetic_key": "SRFM",
+          "canonical_form": "Aaditya",
+          "phonetic_key": "TTY",
           "category": "unknown",
           "status": "active",
-          "confidence": 0.75,
-          "evidence_count": 3,
-          "created_at": "2026-09-06 14:31:15",
-          "updated_at": "2026-09-06 14:31:15",
-          "last_seen_at": "2026-09-06 14:31:15",
+          "confidence": 0.95,
+          "evidence_count": 4,
+          "created_at": "2026-09-07 14:03:26",
+          "updated_at": "2026-09-07 14:03:26",
+          "last_seen_at": "2026-09-07 14:03:26",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.76
+    },
+    {
+      "id": "corrected-ishaan",
+      "name": "Explicit correction for 'Ishaan' fires on a fresh misspelling",
+      "inputs": {
+        "raw_asr": "ishan mentioned the deadline moved to friday",
+        "formatted": "Ishan mentioned the deadline moved to Friday."
+      },
+      "expected": "Ishaan mentioned the deadline moved to Friday.",
+      "actual": "Ishaan mentioned the deadline moved to Friday.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Ishan",
+          "action": "applied",
+          "reason": "'Ishan' phonetically matches active memory 'Ishaan' (confidence 0.95).",
+          "confidence": 0.95,
+          "replacement": "Ishaan"
+        },
+        {
+          "token": "Friday",
+          "action": "abstained_no_match",
+          "reason": "'Friday' looks like a personal term but no memory matches it.",
+          "confidence": null,
+          "replacement": null
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 12,
+          "user_id": "default",
+          "canonical_form": "Ishaan",
+          "phonetic_key": "IXN",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 4,
+          "created_at": "2026-09-07 14:03:26",
+          "updated_at": "2026-09-07 14:03:26",
+          "last_seen_at": "2026-09-07 14:03:26",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.8
+    },
+    {
+      "id": "corrected-vihaan",
+      "name": "Explicit correction for 'Vihaan' fires on a fresh misspelling",
+      "inputs": {
+        "raw_asr": "vihan mentioned the deadline moved to friday",
+        "formatted": "Vihan mentioned the deadline moved to Friday."
+      },
+      "expected": "Vihaan mentioned the deadline moved to Friday.",
+      "actual": "Vihaan mentioned the deadline moved to Friday.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Vihan",
+          "action": "applied",
+          "reason": "'Vihan' phonetically matches active memory 'Vihaan' (confidence 0.95).",
+          "confidence": 0.95,
+          "replacement": "Vihaan"
+        },
+        {
+          "token": "Friday",
+          "action": "abstained_no_match",
+          "reason": "'Friday' looks like a personal term but no memory matches it.",
+          "confidence": null,
+          "replacement": null
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 13,
+          "user_id": "default",
+          "canonical_form": "Vihaan",
+          "phonetic_key": "FHN",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 4,
+          "created_at": "2026-09-07 14:03:26",
+          "updated_at": "2026-09-07 14:03:26",
+          "last_seen_at": "2026-09-07 14:03:26",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.76
+    },
+    {
+      "id": "corrected-simran",
+      "name": "Explicit correction for 'Simran' fires on a fresh misspelling",
+      "inputs": {
+        "raw_asr": "simren mentioned the deadline moved to friday",
+        "formatted": "Simren mentioned the deadline moved to Friday."
+      },
+      "expected": "Simran mentioned the deadline moved to Friday.",
+      "actual": "Simran mentioned the deadline moved to Friday.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Simren",
+          "action": "applied",
+          "reason": "'Simren' phonetically matches active memory 'Simran' (confidence 0.95).",
+          "confidence": 0.95,
+          "replacement": "Simran"
+        },
+        {
+          "token": "Friday",
+          "action": "abstained_no_match",
+          "reason": "'Friday' looks like a personal term but no memory matches it.",
+          "confidence": null,
+          "replacement": null
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 14,
+          "user_id": "default",
+          "canonical_form": "Simran",
+          "phonetic_key": "SMRN",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 4,
+          "created_at": "2026-09-07 14:03:26",
+          "updated_at": "2026-09-07 14:03:26",
+          "last_seen_at": "2026-09-07 14:03:26",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.84
+    },
+    {
+      "id": "corrected-rohan",
+      "name": "Explicit correction for 'Rohan' fires on a fresh misspelling",
+      "inputs": {
+        "raw_asr": "rohaan mentioned the deadline moved to friday",
+        "formatted": "Rohaan mentioned the deadline moved to Friday."
+      },
+      "expected": "Rohan mentioned the deadline moved to Friday.",
+      "actual": "Rohan mentioned the deadline moved to Friday.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Rohaan",
+          "action": "applied",
+          "reason": "'Rohaan' phonetically matches active memory 'Rohan' (confidence 0.95).",
+          "confidence": 0.95,
+          "replacement": "Rohan"
+        },
+        {
+          "token": "Friday",
+          "action": "abstained_no_match",
+          "reason": "'Friday' looks like a personal term but no memory matches it.",
+          "confidence": null,
+          "replacement": null
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 15,
+          "user_id": "default",
+          "canonical_form": "Rohan",
+          "phonetic_key": "RHN",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 4,
+          "created_at": "2026-09-07 14:03:26",
+          "updated_at": "2026-09-07 14:03:26",
+          "last_seen_at": "2026-09-07 14:03:26",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.76
+    },
+    {
+      "id": "corrected-diya",
+      "name": "Explicit correction for 'Diya' fires on a fresh misspelling",
+      "inputs": {
+        "raw_asr": "dia mentioned the deadline moved to friday",
+        "formatted": "Dia mentioned the deadline moved to Friday."
+      },
+      "expected": "Diya mentioned the deadline moved to Friday.",
+      "actual": "Diya mentioned the deadline moved to Friday.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Dia",
+          "action": "applied",
+          "reason": "'Dia' phonetically matches active memory 'Diya' (confidence 0.95).",
+          "confidence": 0.95,
+          "replacement": "Diya"
+        },
+        {
+          "token": "Friday",
+          "action": "abstained_no_match",
+          "reason": "'Friday' looks like a personal term but no memory matches it.",
+          "confidence": null,
+          "replacement": null
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 16,
+          "user_id": "default",
+          "canonical_form": "Diya",
+          "phonetic_key": "TY",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:26",
+          "updated_at": "2026-09-07 14:03:26",
+          "last_seen_at": "2026-09-07 14:03:26",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.67
+    },
+    {
+      "id": "ambiguous-ankith",
+      "name": "Conflicting evidence for 'Ankith': wait for a correction",
+      "inputs": {
+        "raw_asr": "send the invoice to ankith please",
+        "formatted": "Send the invoice to Ankith please."
+      },
+      "expected": "Send the invoice to Ankith please.",
+      "actual": "Send the invoice to Ankith please.",
+      "should_intervene": false,
+      "outcome": "correct_abstention",
+      "decisions": [
+        {
+          "token": "Ankith",
+          "action": "abstained_ambiguous",
+          "reason": "Memory for 'Ankit' has conflicting spelling evidence; waiting for an explicit correction.",
+          "confidence": 0.2,
+          "replacement": null
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 17,
+          "user_id": "default",
+          "canonical_form": "Ankit",
+          "phonetic_key": "ANKT",
+          "category": "unknown",
+          "status": "ambiguous",
+          "confidence": 0.2,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:26",
+          "updated_at": "2026-09-07 14:03:26",
+          "last_seen_at": "2026-09-07 14:03:26",
           "correction_count": 0
-        },
-        {
-          "id": 2,
-          "user_id": "default",
-          "canonical_form": "Aaditya",
-          "phonetic_key": "TTY",
-          "category": "unknown",
-          "status": "active",
-          "confidence": 0.95,
-          "evidence_count": 2,
-          "created_at": "2026-09-06 14:31:15",
-          "updated_at": "2026-09-06 14:31:15",
-          "last_seen_at": "2026-09-06 14:31:15",
-          "correction_count": 1
-        },
-        {
-          "id": 3,
-          "user_id": "default",
-          "canonical_form": "Kivi",
-          "phonetic_key": "KF",
-          "category": "unknown",
-          "status": "active",
-          "confidence": 0.95,
-          "evidence_count": 1,
-          "created_at": "2026-09-06 14:31:15",
-          "updated_at": "2026-09-06 14:31:15",
-          "last_seen_at": "2026-09-06 14:31:15",
-          "correction_count": 1
         }
       ],
-      "latency_ms": 0.53
+      "latency_ms": 0.67
     },
     {
-      "id": "possessive",
-      "name": "Correction survives a possessive suffix",
+      "id": "ambiguous-kabir",
+      "name": "Conflicting evidence for 'Kabir': wait for a correction",
       "inputs": {
-        "raw_asr": "send it to aditya's team",
-        "formatted": "Send it to Aditya's team."
+        "raw_asr": "send the invoice to kabir please",
+        "formatted": "Send the invoice to Kabir please."
       },
-      "expected": "Send it to Aaditya's team.",
-      "actual": "Send it to Aaditya's team.",
-      "should_intervene": true,
-      "outcome": "useful_intervention",
+      "expected": "Send the invoice to Kabir please.",
+      "actual": "Send the invoice to Kabir please.",
+      "should_intervene": false,
+      "outcome": "correct_abstention",
       "decisions": [
         {
-          "token": "Aditya's",
-          "action": "applied",
-          "reason": "'Aditya's' phonetically matches active memory 'Aaditya' (confidence 0.95).",
-          "confidence": 0.95,
-          "replacement": "Aaditya's"
+          "token": "Kabir",
+          "action": "abstained_ambiguous",
+          "reason": "Memory for 'Cabir' has conflicting spelling evidence; waiting for an explicit correction.",
+          "confidence": 0.2,
+          "replacement": null
         }
       ],
       "relevant_memory_state": [
         {
-          "id": 2,
+          "id": 18,
           "user_id": "default",
-          "canonical_form": "Aaditya",
-          "phonetic_key": "TTY",
+          "canonical_form": "Cabir",
+          "phonetic_key": "KBR",
           "category": "unknown",
-          "status": "active",
-          "confidence": 0.95,
-          "evidence_count": 2,
-          "created_at": "2026-09-06 14:31:15",
-          "updated_at": "2026-09-06 14:31:15",
-          "last_seen_at": "2026-09-06 14:31:15",
-          "correction_count": 1
+          "status": "ambiguous",
+          "confidence": 0.2,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:26",
+          "updated_at": "2026-09-07 14:03:26",
+          "last_seen_at": "2026-09-07 14:03:26",
+          "correction_count": 0
         }
       ],
-      "latency_ms": 0.43
+      "latency_ms": 0.66
     },
     {
-      "id": "product-capitalized",
-      "name": "Kiwi capitalized by formatter = product context, correct it",
+      "id": "candidate-tanvi",
+      "name": "Single-sighting candidate 'Tanvi' must not fire yet",
       "inputs": {
-        "raw_asr": "restart the kiwi backend",
-        "formatted": "Restart the Kiwi backend."
+        "raw_asr": "tanavi is joining the standup at ten",
+        "formatted": "Tanavi is joining the standup at ten."
       },
-      "expected": "Restart the Kivi backend.",
-      "actual": "Restart the Kivi backend.",
+      "expected": "Tanavi is joining the standup at ten.",
+      "actual": "Tanavi is joining the standup at ten.",
+      "should_intervene": false,
+      "outcome": "correct_abstention",
+      "decisions": [],
+      "relevant_memory_state": [
+        {
+          "id": 19,
+          "user_id": "default",
+          "canonical_form": "Tanavi",
+          "phonetic_key": "TNF",
+          "category": "unknown",
+          "status": "candidate",
+          "confidence": 0.2,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:26",
+          "updated_at": "2026-09-07 14:03:26",
+          "last_seen_at": "2026-09-07 14:03:26",
+          "correction_count": 0
+        }
+      ],
+      "latency_ms": 0.66
+    },
+    {
+      "id": "candidate-devansh",
+      "name": "Single-sighting candidate 'Devansh' must not fire yet",
+      "inputs": {
+        "raw_asr": "devanash is joining the standup at ten",
+        "formatted": "Devanash is joining the standup at ten."
+      },
+      "expected": "Devanash is joining the standup at ten.",
+      "actual": "Devanash is joining the standup at ten.",
+      "should_intervene": false,
+      "outcome": "correct_abstention",
+      "decisions": [],
+      "relevant_memory_state": [
+        {
+          "id": 20,
+          "user_id": "default",
+          "canonical_form": "Devanash",
+          "phonetic_key": "TFNX",
+          "category": "unknown",
+          "status": "candidate",
+          "confidence": 0.2,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:26",
+          "updated_at": "2026-09-07 14:03:26",
+          "last_seen_at": "2026-09-07 14:03:26",
+          "correction_count": 0
+        }
+      ],
+      "latency_ms": 0.76
+    },
+    {
+      "id": "collision-kiwi-product",
+      "name": "'Kiwi' in product context corrected to 'Kivi'",
+      "inputs": {
+        "raw_asr": "can we move this conversation to kiwi",
+        "formatted": "Can we move this conversation to Kiwi?"
+      },
+      "expected": "Can we move this conversation to Kivi?",
+      "actual": "Can we move this conversation to Kivi?",
       "should_intervene": true,
       "outcome": "useful_intervention",
       "decisions": [
@@ -155,7 +1038,7 @@
       ],
       "relevant_memory_state": [
         {
-          "id": 3,
+          "id": 21,
           "user_id": "default",
           "canonical_form": "Kivi",
           "phonetic_key": "KF",
@@ -163,17 +1046,17 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-06 14:31:15",
-          "updated_at": "2026-09-06 14:31:15",
-          "last_seen_at": "2026-09-06 14:31:15",
+          "created_at": "2026-09-07 14:03:26",
+          "updated_at": "2026-09-07 14:03:26",
+          "last_seen_at": "2026-09-07 14:03:26",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.36
+      "latency_ms": 0.7
     },
     {
-      "id": "fruit-lowercase",
-      "name": "kiwi lowercase = the fruit, leave it alone",
+      "id": "collision-kiwi-literal",
+      "name": "'kiwi' used with its ordinary meaning: leave it alone",
       "inputs": {
         "raw_asr": "i ate a kiwi for breakfast",
         "formatted": "I ate a kiwi for breakfast."
@@ -189,11 +1072,18 @@
           "reason": "'kiwi' is common English and the formatter kept it lowercase, so context suggests the ordinary word, not 'Kivi'. Leaving it alone.",
           "confidence": 0.95,
           "replacement": null
+        },
+        {
+          "token": "for",
+          "action": "abstained_common_word",
+          "reason": "'for' is common English and the formatter kept it lowercase, so context suggests the ordinary word, not 'Fyre'. Leaving it alone.",
+          "confidence": 0.95,
+          "replacement": null
         }
       ],
       "relevant_memory_state": [
         {
-          "id": 3,
+          "id": 21,
           "user_id": "default",
           "canonical_form": "Kivi",
           "phonetic_key": "KF",
@@ -201,37 +1091,735 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-06 14:31:15",
-          "updated_at": "2026-09-06 14:31:15",
-          "last_seen_at": "2026-09-06 14:31:15",
+          "created_at": "2026-09-07 14:03:26",
+          "updated_at": "2026-09-07 14:03:26",
+          "last_seen_at": "2026-09-07 14:03:26",
+          "correction_count": 1
+        },
+        {
+          "id": 25,
+          "user_id": "default",
+          "canonical_form": "Fyre",
+          "phonetic_key": "FR",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:26",
+          "updated_at": "2026-09-07 14:03:26",
+          "last_seen_at": "2026-09-07 14:03:26",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.42
+      "latency_ms": 0.7
     },
     {
-      "id": "promoted-misspelling",
-      "name": "Repetition-promoted memory fixes a new misspelling",
+      "id": "collision-kiwi-sentence-start",
+      "name": "KNOWN LIMITATION: 'kiwi' at sentence start, casing signal lost",
       "inputs": {
-        "raw_asr": "the sarvum roadmap is ready",
-        "formatted": "The Sarvum roadmap is ready."
+        "raw_asr": "kiwi is my favorite fruit",
+        "formatted": "Kiwi is my favorite fruit."
       },
-      "expected": "The Sarvam roadmap is ready.",
-      "actual": "The Sarvam roadmap is ready.",
+      "expected": "Kiwi is my favorite fruit.",
+      "actual": "Kivi is my favorite fruit.",
+      "should_intervene": false,
+      "outcome": "incorrect_intervention",
+      "decisions": [
+        {
+          "token": "Kiwi",
+          "action": "applied",
+          "reason": "'Kiwi' phonetically matches active memory 'Kivi' (confidence 0.95).",
+          "confidence": 0.95,
+          "replacement": "Kivi"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 21,
+          "user_id": "default",
+          "canonical_form": "Kivi",
+          "phonetic_key": "KF",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:26",
+          "updated_at": "2026-09-07 14:03:26",
+          "last_seen_at": "2026-09-07 14:03:26",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.58
+    },
+    {
+      "id": "collision-lift-product",
+      "name": "'Lift' in product context corrected to 'Lyft'",
+      "inputs": {
+        "raw_asr": "can we move this conversation to lift",
+        "formatted": "Can we move this conversation to Lift?"
+      },
+      "expected": "Can we move this conversation to Lyft?",
+      "actual": "Can we move this conversation to Lyft?",
       "should_intervene": true,
       "outcome": "useful_intervention",
       "decisions": [
         {
-          "token": "Sarvum",
+          "token": "Lift",
           "action": "applied",
-          "reason": "'Sarvum' phonetically matches active memory 'Sarvam' (confidence 0.75).",
+          "reason": "'Lift' phonetically matches active memory 'Lyft' (confidence 0.95).",
+          "confidence": 0.95,
+          "replacement": "Lyft"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 22,
+          "user_id": "default",
+          "canonical_form": "Lyft",
+          "phonetic_key": "LFT",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:26",
+          "updated_at": "2026-09-07 14:03:26",
+          "last_seen_at": "2026-09-07 14:03:26",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.72
+    },
+    {
+      "id": "collision-lift-literal",
+      "name": "'lift' used with its ordinary meaning: leave it alone",
+      "inputs": {
+        "raw_asr": "please lift the box carefully",
+        "formatted": "Please lift the box carefully."
+      },
+      "expected": "Please lift the box carefully.",
+      "actual": "Please lift the box carefully.",
+      "should_intervene": false,
+      "outcome": "correct_abstention",
+      "decisions": [
+        {
+          "token": "lift",
+          "action": "abstained_common_word",
+          "reason": "'lift' is common English and the formatter kept it lowercase, so context suggests the ordinary word, not 'Lyft'. Leaving it alone.",
+          "confidence": 0.95,
+          "replacement": null
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 22,
+          "user_id": "default",
+          "canonical_form": "Lyft",
+          "phonetic_key": "LFT",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:26",
+          "updated_at": "2026-09-07 14:03:26",
+          "last_seen_at": "2026-09-07 14:03:26",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.61
+    },
+    {
+      "id": "collision-lift-sentence-start",
+      "name": "KNOWN LIMITATION: 'lift' at sentence start, casing signal lost",
+      "inputs": {
+        "raw_asr": "lift with your legs not your back",
+        "formatted": "Lift with your legs, not your back."
+      },
+      "expected": "Lift with your legs, not your back.",
+      "actual": "Lyft with your legs, not your back.",
+      "should_intervene": false,
+      "outcome": "incorrect_intervention",
+      "decisions": [
+        {
+          "token": "Lift",
+          "action": "applied",
+          "reason": "'Lift' phonetically matches active memory 'Lyft' (confidence 0.95).",
+          "confidence": 0.95,
+          "replacement": "Lyft"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 22,
+          "user_id": "default",
+          "canonical_form": "Lyft",
+          "phonetic_key": "LFT",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:26",
+          "updated_at": "2026-09-07 14:03:26",
+          "last_seen_at": "2026-09-07 14:03:26",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.61
+    },
+    {
+      "id": "collision-zoom-product",
+      "name": "'Zoom' in product context corrected to 'Xoom'",
+      "inputs": {
+        "raw_asr": "can we move this conversation to zoom",
+        "formatted": "Can we move this conversation to Zoom?"
+      },
+      "expected": "Can we move this conversation to Xoom?",
+      "actual": "Can we move this conversation to Xoom?",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Zoom",
+          "action": "applied",
+          "reason": "'Zoom' phonetically matches active memory 'Xoom' (confidence 0.95).",
+          "confidence": 0.95,
+          "replacement": "Xoom"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 23,
+          "user_id": "default",
+          "canonical_form": "Xoom",
+          "phonetic_key": "SM",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:26",
+          "updated_at": "2026-09-07 14:03:26",
+          "last_seen_at": "2026-09-07 14:03:26",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.72
+    },
+    {
+      "id": "collision-zoom-literal",
+      "name": "'zoom' used with its ordinary meaning: leave it alone",
+      "inputs": {
+        "raw_asr": "the car began to zoom down the highway",
+        "formatted": "The car began to zoom down the highway."
+      },
+      "expected": "The car began to zoom down the highway.",
+      "actual": "The car began to zoom down the highway.",
+      "should_intervene": false,
+      "outcome": "correct_abstention",
+      "decisions": [
+        {
+          "token": "zoom",
+          "action": "abstained_common_word",
+          "reason": "'zoom' is common English and the formatter kept it lowercase, so context suggests the ordinary word, not 'Xoom'. Leaving it alone.",
+          "confidence": 0.95,
+          "replacement": null
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 23,
+          "user_id": "default",
+          "canonical_form": "Xoom",
+          "phonetic_key": "SM",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:27",
+          "updated_at": "2026-09-07 14:03:27",
+          "last_seen_at": "2026-09-07 14:03:27",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.67
+    },
+    {
+      "id": "collision-zoom-sentence-start",
+      "name": "KNOWN LIMITATION: 'zoom' at sentence start, casing signal lost",
+      "inputs": {
+        "raw_asr": "zoom lenses are heavier than primes",
+        "formatted": "Zoom lenses are heavier than primes."
+      },
+      "expected": "Zoom lenses are heavier than primes.",
+      "actual": "Xoom lenses are heavier than primes.",
+      "should_intervene": false,
+      "outcome": "incorrect_intervention",
+      "decisions": [
+        {
+          "token": "Zoom",
+          "action": "applied",
+          "reason": "'Zoom' phonetically matches active memory 'Xoom' (confidence 0.95).",
+          "confidence": 0.95,
+          "replacement": "Xoom"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 23,
+          "user_id": "default",
+          "canonical_form": "Xoom",
+          "phonetic_key": "SM",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:27",
+          "updated_at": "2026-09-07 14:03:27",
+          "last_seen_at": "2026-09-07 14:03:27",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.59
+    },
+    {
+      "id": "collision-zero-product",
+      "name": "'Zero' in product context corrected to 'Xero'",
+      "inputs": {
+        "raw_asr": "can we move this conversation to zero",
+        "formatted": "Can we move this conversation to Zero?"
+      },
+      "expected": "Can we move this conversation to Xero?",
+      "actual": "Can we move this conversation to Xero?",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Zero",
+          "action": "applied",
+          "reason": "'Zero' phonetically matches active memory 'Xero' (confidence 0.95).",
+          "confidence": 0.95,
+          "replacement": "Xero"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 24,
+          "user_id": "default",
+          "canonical_form": "Xero",
+          "phonetic_key": "SR",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:27",
+          "updated_at": "2026-09-07 14:03:27",
+          "last_seen_at": "2026-09-07 14:03:27",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.66
+    },
+    {
+      "id": "collision-zero-literal",
+      "name": "'zero' used with its ordinary meaning: leave it alone",
+      "inputs": {
+        "raw_asr": "the counter reset back to zero",
+        "formatted": "The counter reset back to zero."
+      },
+      "expected": "The counter reset back to zero.",
+      "actual": "The counter reset back to zero.",
+      "should_intervene": false,
+      "outcome": "correct_abstention",
+      "decisions": [
+        {
+          "token": "zero",
+          "action": "abstained_common_word",
+          "reason": "'zero' is common English and the formatter kept it lowercase, so context suggests the ordinary word, not 'Xero'. Leaving it alone.",
+          "confidence": 0.95,
+          "replacement": null
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 24,
+          "user_id": "default",
+          "canonical_form": "Xero",
+          "phonetic_key": "SR",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:27",
+          "updated_at": "2026-09-07 14:03:27",
+          "last_seen_at": "2026-09-07 14:03:27",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.69
+    },
+    {
+      "id": "collision-zero-sentence-start",
+      "name": "KNOWN LIMITATION: 'zero' at sentence start, casing signal lost",
+      "inputs": {
+        "raw_asr": "zero tolerance policies rarely work",
+        "formatted": "Zero tolerance policies rarely work."
+      },
+      "expected": "Zero tolerance policies rarely work.",
+      "actual": "Xero tolerance policies rarely work.",
+      "should_intervene": false,
+      "outcome": "incorrect_intervention",
+      "decisions": [
+        {
+          "token": "Zero",
+          "action": "applied",
+          "reason": "'Zero' phonetically matches active memory 'Xero' (confidence 0.95).",
+          "confidence": 0.95,
+          "replacement": "Xero"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 24,
+          "user_id": "default",
+          "canonical_form": "Xero",
+          "phonetic_key": "SR",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:27",
+          "updated_at": "2026-09-07 14:03:27",
+          "last_seen_at": "2026-09-07 14:03:27",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.6
+    },
+    {
+      "id": "collision-fire-product",
+      "name": "'Fire' in product context corrected to 'Fyre'",
+      "inputs": {
+        "raw_asr": "can we move this conversation to fire",
+        "formatted": "Can we move this conversation to Fire?"
+      },
+      "expected": "Can we move this conversation to Fyre?",
+      "actual": "Can we move this conversation to Fyre?",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Fire",
+          "action": "applied",
+          "reason": "'Fire' phonetically matches active memory 'Fyre' (confidence 0.95).",
+          "confidence": 0.95,
+          "replacement": "Fyre"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 25,
+          "user_id": "default",
+          "canonical_form": "Fyre",
+          "phonetic_key": "FR",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:27",
+          "updated_at": "2026-09-07 14:03:27",
+          "last_seen_at": "2026-09-07 14:03:27",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.68
+    },
+    {
+      "id": "collision-fire-literal",
+      "name": "'fire' used with its ordinary meaning: leave it alone",
+      "inputs": {
+        "raw_asr": "please put out the fire before we leave",
+        "formatted": "Please put out the fire before we leave."
+      },
+      "expected": "Please put out the fire before we leave.",
+      "actual": "Please put out the fire before we leave.",
+      "should_intervene": false,
+      "outcome": "correct_abstention",
+      "decisions": [
+        {
+          "token": "fire",
+          "action": "abstained_common_word",
+          "reason": "'fire' is common English and the formatter kept it lowercase, so context suggests the ordinary word, not 'Fyre'. Leaving it alone.",
+          "confidence": 0.95,
+          "replacement": null
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 25,
+          "user_id": "default",
+          "canonical_form": "Fyre",
+          "phonetic_key": "FR",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:27",
+          "updated_at": "2026-09-07 14:03:27",
+          "last_seen_at": "2026-09-07 14:03:27",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.72
+    },
+    {
+      "id": "collision-fire-sentence-start",
+      "name": "KNOWN LIMITATION: 'fire' at sentence start, casing signal lost",
+      "inputs": {
+        "raw_asr": "fire drills happen every month here",
+        "formatted": "Fire drills happen every month here."
+      },
+      "expected": "Fire drills happen every month here.",
+      "actual": "Fyre drills happen every month here.",
+      "should_intervene": false,
+      "outcome": "incorrect_intervention",
+      "decisions": [
+        {
+          "token": "Fire",
+          "action": "applied",
+          "reason": "'Fire' phonetically matches active memory 'Fyre' (confidence 0.95).",
+          "confidence": 0.95,
+          "replacement": "Fyre"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 25,
+          "user_id": "default",
+          "canonical_form": "Fyre",
+          "phonetic_key": "FR",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:27",
+          "updated_at": "2026-09-07 14:03:27",
+          "last_seen_at": "2026-09-07 14:03:27",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.58
+    },
+    {
+      "id": "collision-flicker-product",
+      "name": "'Flicker' in product context corrected to 'Flickr'",
+      "inputs": {
+        "raw_asr": "can we move this conversation to flicker",
+        "formatted": "Can we move this conversation to Flicker?"
+      },
+      "expected": "Can we move this conversation to Flickr?",
+      "actual": "Can we move this conversation to Flickr?",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Flicker",
+          "action": "applied",
+          "reason": "'Flicker' phonetically matches active memory 'Flickr' (confidence 0.95).",
+          "confidence": 0.95,
+          "replacement": "Flickr"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 26,
+          "user_id": "default",
+          "canonical_form": "Flickr",
+          "phonetic_key": "FLKR",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:27",
+          "updated_at": "2026-09-07 14:03:27",
+          "last_seen_at": "2026-09-07 14:03:27",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.76
+    },
+    {
+      "id": "collision-flicker-literal",
+      "name": "KNOWN LIMITATION: 'flicker' below common-word threshold while 'Flickr' sits above it -- lowercase-trust rule never engages",
+      "inputs": {
+        "raw_asr": "the candle started to flicker in the wind",
+        "formatted": "The candle started to flicker in the wind."
+      },
+      "expected": "The candle started to flicker in the wind.",
+      "actual": "The candle started to flicker in the wind.",
+      "should_intervene": false,
+      "outcome": "correct_abstention",
+      "decisions": [
+        {
+          "token": "flicker",
+          "action": "abstained_common_word",
+          "reason": "'flicker' is common English and the formatter kept it lowercase, so context suggests the ordinary word, not 'Flickr'. Leaving it alone.",
+          "confidence": 0.95,
+          "replacement": null
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 26,
+          "user_id": "default",
+          "canonical_form": "Flickr",
+          "phonetic_key": "FLKR",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:27",
+          "updated_at": "2026-09-07 14:03:27",
+          "last_seen_at": "2026-09-07 14:03:27",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.71
+    },
+    {
+      "id": "collision-flicker-sentence-start",
+      "name": "KNOWN LIMITATION: 'flicker' at sentence start, casing signal lost",
+      "inputs": {
+        "raw_asr": "flicker is a common symptom of a loose bulb",
+        "formatted": "Flicker is a common symptom of a loose bulb."
+      },
+      "expected": "Flicker is a common symptom of a loose bulb.",
+      "actual": "Flickr is a common symptom of a loose bulb.",
+      "should_intervene": false,
+      "outcome": "incorrect_intervention",
+      "decisions": [
+        {
+          "token": "Flicker",
+          "action": "applied",
+          "reason": "'Flicker' phonetically matches active memory 'Flickr' (confidence 0.95).",
+          "confidence": 0.95,
+          "replacement": "Flickr"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 26,
+          "user_id": "default",
+          "canonical_form": "Flickr",
+          "phonetic_key": "FLKR",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 14:03:27",
+          "updated_at": "2026-09-07 14:03:27",
+          "last_seen_at": "2026-09-07 14:03:27",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.78
+    },
+    {
+      "id": "nearmiss-fiverr",
+      "name": "Near-miss product 'Fiverr' (below common-word cutoff) still promotes normally",
+      "inputs": {
+        "raw_asr": "restart the fiver service",
+        "formatted": "Restart the Fiver service."
+      },
+      "expected": "Restart the Fiverr service.",
+      "actual": "Restart the Fiverr service.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Fiver",
+          "action": "applied",
+          "reason": "'Fiver' phonetically matches active memory 'Fiverr' (confidence 0.75).",
+          "confidence": 0.75,
+          "replacement": "Fiverr"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 27,
+          "user_id": "default",
+          "canonical_form": "Fiverr",
+          "phonetic_key": "FFR",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.75,
+          "evidence_count": 3,
+          "created_at": "2026-09-07 14:03:27",
+          "updated_at": "2026-09-07 14:03:27",
+          "last_seen_at": "2026-09-07 14:03:27",
+          "correction_count": 0
+        }
+      ],
+      "latency_ms": 0.7
+    },
+    {
+      "id": "nearmiss-scribd",
+      "name": "Near-miss product 'Scribd' (below common-word cutoff) still promotes normally",
+      "inputs": {
+        "raw_asr": "restart the scribed service",
+        "formatted": "Restart the Scribed service."
+      },
+      "expected": "Restart the Scribd service.",
+      "actual": "Restart the Scribd service.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Scribed",
+          "action": "applied",
+          "reason": "'Scribed' phonetically matches active memory 'Scribd' (confidence 0.75).",
+          "confidence": 0.75,
+          "replacement": "Scribd"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 28,
+          "user_id": "default",
+          "canonical_form": "Scribd",
+          "phonetic_key": "SKRBT",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.75,
+          "evidence_count": 3,
+          "created_at": "2026-09-07 14:03:27",
+          "updated_at": "2026-09-07 14:03:27",
+          "last_seen_at": "2026-09-07 14:03:27",
+          "correction_count": 0
+        }
+      ],
+      "latency_ms": 0.81
+    },
+    {
+      "id": "plain-sarvam",
+      "name": "Plain product 'Sarvam' fixes a fresh misspelling",
+      "inputs": {
+        "raw_asr": "file a bug against sarvaam",
+        "formatted": "File a bug against Sarvaam."
+      },
+      "expected": "File a bug against Sarvam.",
+      "actual": "File a bug against Sarvam.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Sarvaam",
+          "action": "applied",
+          "reason": "'Sarvaam' phonetically matches active memory 'Sarvam' (confidence 0.75).",
           "confidence": 0.75,
           "replacement": "Sarvam"
         }
       ],
       "relevant_memory_state": [
         {
-          "id": 1,
+          "id": 29,
           "user_id": "default",
           "canonical_form": "Sarvam",
           "phonetic_key": "SRFM",
@@ -239,154 +1827,195 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-06 14:31:15",
-          "updated_at": "2026-09-06 14:31:15",
-          "last_seen_at": "2026-09-06 14:31:15",
+          "created_at": "2026-09-07 14:03:27",
+          "updated_at": "2026-09-07 14:03:27",
+          "last_seen_at": "2026-09-07 14:03:27",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.59
+      "latency_ms": 0.75
     },
     {
-      "id": "already-correct",
-      "name": "Everything already right: must not touch anything",
+      "id": "plain-figma",
+      "name": "Plain product 'Figma' fixes a fresh misspelling",
       "inputs": {
-        "raw_asr": "ask aaditya about the sarvam kivi launch",
-        "formatted": "Ask Aaditya about the Sarvam Kivi launch."
+        "raw_asr": "file a bug against figmaa",
+        "formatted": "File a bug against Figmaa."
       },
-      "expected": "Ask Aaditya about the Sarvam Kivi launch.",
-      "actual": "Ask Aaditya about the Sarvam Kivi launch.",
+      "expected": "File a bug against Figma.",
+      "actual": "File a bug against Figma.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Figmaa",
+          "action": "applied",
+          "reason": "'Figmaa' phonetically matches active memory 'Figma' (confidence 0.75).",
+          "confidence": 0.75,
+          "replacement": "Figma"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 30,
+          "user_id": "default",
+          "canonical_form": "Figma",
+          "phonetic_key": "FKM",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.75,
+          "evidence_count": 3,
+          "created_at": "2026-09-07 14:03:27",
+          "updated_at": "2026-09-07 14:03:27",
+          "last_seen_at": "2026-09-07 14:03:27",
+          "correction_count": 0
+        }
+      ],
+      "latency_ms": 0.68
+    },
+    {
+      "id": "plain-coda",
+      "name": "Plain product 'Coda' fixes a fresh misspelling",
+      "inputs": {
+        "raw_asr": "file a bug against codaa",
+        "formatted": "File a bug against Codaa."
+      },
+      "expected": "File a bug against Coda.",
+      "actual": "File a bug against Coda.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Codaa",
+          "action": "applied",
+          "reason": "'Codaa' phonetically matches active memory 'Coda' (confidence 0.75).",
+          "confidence": 0.75,
+          "replacement": "Coda"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 31,
+          "user_id": "default",
+          "canonical_form": "Coda",
+          "phonetic_key": "KT",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.75,
+          "evidence_count": 3,
+          "created_at": "2026-09-07 14:03:27",
+          "updated_at": "2026-09-07 14:03:27",
+          "last_seen_at": "2026-09-07 14:03:27",
+          "correction_count": 0
+        }
+      ],
+      "latency_ms": 0.67
+    },
+    {
+      "id": "plain-asana",
+      "name": "Plain product 'Asana' fixes a fresh misspelling",
+      "inputs": {
+        "raw_asr": "file a bug against assana",
+        "formatted": "File a bug against Assana."
+      },
+      "expected": "File a bug against Asana.",
+      "actual": "File a bug against Asana.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Assana",
+          "action": "applied",
+          "reason": "'Assana' phonetically matches active memory 'Asana' (confidence 0.75).",
+          "confidence": 0.75,
+          "replacement": "Asana"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 32,
+          "user_id": "default",
+          "canonical_form": "Asana",
+          "phonetic_key": "ASN",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.75,
+          "evidence_count": 3,
+          "created_at": "2026-09-07 14:03:27",
+          "updated_at": "2026-09-07 14:03:27",
+          "last_seen_at": "2026-09-07 14:03:27",
+          "correction_count": 0
+        }
+      ],
+      "latency_ms": 0.71
+    },
+    {
+      "id": "plain-canva",
+      "name": "Plain product 'Canva' fixes a fresh misspelling",
+      "inputs": {
+        "raw_asr": "file a bug against canvaa",
+        "formatted": "File a bug against Canvaa."
+      },
+      "expected": "File a bug against Canva.",
+      "actual": "File a bug against Canva.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Canvaa",
+          "action": "applied",
+          "reason": "'Canvaa' phonetically matches active memory 'Canva' (confidence 0.75).",
+          "confidence": 0.75,
+          "replacement": "Canva"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 33,
+          "user_id": "default",
+          "canonical_form": "Canva",
+          "phonetic_key": "KNF",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.75,
+          "evidence_count": 3,
+          "created_at": "2026-09-07 14:03:27",
+          "updated_at": "2026-09-07 14:03:27",
+          "last_seen_at": "2026-09-07 14:03:27",
+          "correction_count": 0
+        }
+      ],
+      "latency_ms": 0.72
+    },
+    {
+      "id": "candidate-loom",
+      "name": "Single-sighting product 'Loom' must not fire yet",
+      "inputs": {
+        "raw_asr": "the looum integration needs testing",
+        "formatted": "The Looum integration needs testing."
+      },
+      "expected": "The Looum integration needs testing.",
+      "actual": "The Looum integration needs testing.",
       "should_intervene": false,
       "outcome": "correct_abstention",
       "decisions": [],
       "relevant_memory_state": [
         {
-          "id": 1,
+          "id": 34,
           "user_id": "default",
-          "canonical_form": "Sarvam",
-          "phonetic_key": "SRFM",
-          "category": "unknown",
-          "status": "active",
-          "confidence": 0.75,
-          "evidence_count": 3,
-          "created_at": "2026-09-06 14:31:15",
-          "updated_at": "2026-09-06 14:31:15",
-          "last_seen_at": "2026-09-06 14:31:15",
-          "correction_count": 0
-        },
-        {
-          "id": 2,
-          "user_id": "default",
-          "canonical_form": "Aaditya",
-          "phonetic_key": "TTY",
-          "category": "unknown",
-          "status": "active",
-          "confidence": 0.95,
-          "evidence_count": 2,
-          "created_at": "2026-09-06 14:31:15",
-          "updated_at": "2026-09-06 14:31:15",
-          "last_seen_at": "2026-09-06 14:31:15",
-          "correction_count": 1
-        },
-        {
-          "id": 3,
-          "user_id": "default",
-          "canonical_form": "Kivi",
-          "phonetic_key": "KF",
-          "category": "unknown",
-          "status": "active",
-          "confidence": 0.95,
-          "evidence_count": 1,
-          "created_at": "2026-09-06 14:31:15",
-          "updated_at": "2026-09-06 14:31:15",
-          "last_seen_at": "2026-09-06 14:31:15",
-          "correction_count": 1
-        }
-      ],
-      "latency_ms": 0.59
-    },
-    {
-      "id": "candidate-too-weak",
-      "name": "Single-sighting candidate must not fire yet",
-      "inputs": {
-        "raw_asr": "open the figna file",
-        "formatted": "Open the Figna file."
-      },
-      "expected": "Open the Figna file.",
-      "actual": "Open the Figna file.",
-      "should_intervene": false,
-      "outcome": "correct_abstention",
-      "decisions": [
-        {
-          "token": "Figna",
-          "action": "abstained_low_confidence",
-          "reason": "'Figna' matches candidate 'Figma' but its confidence 0.20 is below the apply threshold 0.7.",
-          "confidence": 0.2,
-          "replacement": null
-        },
-        {
-          "token": "Figna",
-          "action": "learned_ambiguous",
-          "reason": "Seen both 'Figma' and 'Figna' for the same sound; marked ambiguous until an explicit correction resolves it.",
-          "confidence": 0.2,
-          "replacement": null
-        }
-      ],
-      "relevant_memory_state": [
-        {
-          "id": 5,
-          "user_id": "default",
-          "canonical_form": "Figma",
-          "phonetic_key": "FKM",
+          "canonical_form": "Looum",
+          "phonetic_key": "LM",
           "category": "unknown",
           "status": "candidate",
           "confidence": 0.2,
           "evidence_count": 1,
-          "created_at": "2026-09-06 14:31:15",
-          "updated_at": "2026-09-06 14:31:15",
-          "last_seen_at": "2026-09-06 14:31:15",
+          "created_at": "2026-09-07 14:03:27",
+          "updated_at": "2026-09-07 14:03:27",
+          "last_seen_at": "2026-09-07 14:03:27",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.49
-    },
-    {
-      "id": "ambiguous-cluster",
-      "name": "Conflicting Ankit/Ankith evidence: wait for a correction",
-      "inputs": {
-        "raw_asr": "ankith owns this task",
-        "formatted": "Ankith owns this task."
-      },
-      "expected": "Ankith owns this task.",
-      "actual": "Ankith owns this task.",
-      "should_intervene": false,
-      "outcome": "correct_abstention",
-      "decisions": [
-        {
-          "token": "Ankith",
-          "action": "abstained_ambiguous",
-          "reason": "Memory for 'Ankit' has conflicting spelling evidence; waiting for an explicit correction.",
-          "confidence": 0.2,
-          "replacement": null
-        }
-      ],
-      "relevant_memory_state": [
-        {
-          "id": 6,
-          "user_id": "default",
-          "canonical_form": "Ankit",
-          "phonetic_key": "ANKT",
-          "category": "unknown",
-          "status": "ambiguous",
-          "confidence": 0.2,
-          "evidence_count": 1,
-          "created_at": "2026-09-06 14:31:15",
-          "updated_at": "2026-09-06 14:31:15",
-          "last_seen_at": "2026-09-06 14:31:15",
-          "correction_count": 0
-        }
-      ],
-      "latency_ms": 0.41
+      "latency_ms": 0.64
     },
     {
       "id": "unknown-name",
@@ -416,7 +2045,7 @@
         }
       ],
       "relevant_memory_state": [],
-      "latency_ms": 0.45
+      "latency_ms": 0.83
     },
     {
       "id": "common-word-plain",
@@ -431,11 +2060,11 @@
       "outcome": "correct_abstention",
       "decisions": [],
       "relevant_memory_state": [],
-      "latency_ms": 0.51
+      "latency_ms": 0.59
     },
     {
-      "id": "common-word-capitalized",
-      "name": "Notion the product, but no memory for it: hands off",
+      "id": "common-word-capitalized-no-memory",
+      "name": "'Notion' the product, but no memory for it: hands off",
       "inputs": {
         "raw_asr": "update the notion doc",
         "formatted": "Update the Notion doc."
@@ -454,11 +2083,176 @@
         }
       ],
       "relevant_memory_state": [],
-      "latency_ms": 0.45
+      "latency_ms": 0.59
     },
     {
-      "id": "promoted-already-correct",
-      "name": "Priya spelled right: no decision, just quiet evidence",
+      "id": "possessive-fresh",
+      "name": "Correction survives a possessive suffix on a name not in the original example",
+      "inputs": {
+        "raw_asr": "send it to ishaan's team",
+        "formatted": "Send it to Ishaan's team."
+      },
+      "expected": "Send it to Ishaan's team.",
+      "actual": "Send it to Ishaan's team.",
+      "should_intervene": false,
+      "outcome": "correct_abstention",
+      "decisions": [],
+      "relevant_memory_state": [
+        {
+          "id": 12,
+          "user_id": "default",
+          "canonical_form": "Ishaan",
+          "phonetic_key": "IXN",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 4,
+          "created_at": "2026-09-07 14:03:28",
+          "updated_at": "2026-09-07 14:03:28",
+          "last_seen_at": "2026-09-07 14:03:28",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.57
+    },
+    {
+      "id": "possessive-misspelled",
+      "name": "Possessive suffix on a misspelled, corrected name",
+      "inputs": {
+        "raw_asr": "send it to ishan's team",
+        "formatted": "Send it to Ishan's team."
+      },
+      "expected": "Send it to Ishaan's team.",
+      "actual": "Send it to Ishaan's team.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Ishan's",
+          "action": "applied",
+          "reason": "'Ishan's' phonetically matches active memory 'Ishaan' (confidence 0.95).",
+          "confidence": 0.95,
+          "replacement": "Ishaan's"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 12,
+          "user_id": "default",
+          "canonical_form": "Ishaan",
+          "phonetic_key": "IXN",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 4,
+          "created_at": "2026-09-07 14:03:28",
+          "updated_at": "2026-09-07 14:03:28",
+          "last_seen_at": "2026-09-07 14:03:28",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.69
+    },
+    {
+      "id": "multi-token-name-and-product",
+      "name": "Two independently-learned memories corrected in one sentence",
+      "inputs": {
+        "raw_asr": "ask pria to check the fiver outage",
+        "formatted": "Ask Pria to check the Fiver outage."
+      },
+      "expected": "Ask Priya to check the Fiverr outage.",
+      "actual": "Ask Priya to check the Fiverr outage.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Pria",
+          "action": "applied",
+          "reason": "'Pria' phonetically matches active memory 'Priya' (confidence 0.75).",
+          "confidence": 0.75,
+          "replacement": "Priya"
+        },
+        {
+          "token": "Fiver",
+          "action": "applied",
+          "reason": "'Fiver' phonetically matches active memory 'Fiverr' (confidence 0.75).",
+          "confidence": 0.75,
+          "replacement": "Fiverr"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 1,
+          "user_id": "default",
+          "canonical_form": "Priya",
+          "phonetic_key": "PRY",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.75,
+          "evidence_count": 3,
+          "created_at": "2026-09-07 14:03:28",
+          "updated_at": "2026-09-07 14:03:28",
+          "last_seen_at": "2026-09-07 14:03:28",
+          "correction_count": 0
+        },
+        {
+          "id": 27,
+          "user_id": "default",
+          "canonical_form": "Fiverr",
+          "phonetic_key": "FFR",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.75,
+          "evidence_count": 3,
+          "created_at": "2026-09-07 14:03:28",
+          "updated_at": "2026-09-07 14:03:28",
+          "last_seen_at": "2026-09-07 14:03:28",
+          "correction_count": 0
+        }
+      ],
+      "latency_ms": 0.76
+    },
+    {
+      "id": "lowercase-name-uncapitalized",
+      "name": "Formatter failed to capitalize a rare, corrected name: still fix it",
+      "inputs": {
+        "raw_asr": "tell ishan it works",
+        "formatted": "Tell ishan it works."
+      },
+      "expected": "Tell Ishaan it works.",
+      "actual": "Tell Ishaan it works.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "ishan",
+          "action": "applied",
+          "reason": "'ishan' phonetically matches active memory 'Ishaan' (confidence 0.95).",
+          "confidence": 0.95,
+          "replacement": "Ishaan"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 12,
+          "user_id": "default",
+          "canonical_form": "Ishaan",
+          "phonetic_key": "IXN",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 4,
+          "created_at": "2026-09-07 14:03:28",
+          "updated_at": "2026-09-07 14:03:28",
+          "last_seen_at": "2026-09-07 14:03:28",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.62
+    },
+    {
+      "id": "exact-match-no-decision",
+      "name": "Token already equals the canonical form exactly: no decision at all",
       "inputs": {
         "raw_asr": "priya approved the design",
         "formatted": "Priya approved the design."
@@ -470,7 +2264,7 @@
       "decisions": [],
       "relevant_memory_state": [
         {
-          "id": 4,
+          "id": 1,
           "user_id": "default",
           "canonical_form": "Priya",
           "phonetic_key": "PRY",
@@ -478,127 +2272,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-06 14:31:15",
-          "updated_at": "2026-09-06 14:31:15",
-          "last_seen_at": "2026-09-06 14:31:15",
+          "created_at": "2026-09-07 14:03:28",
+          "updated_at": "2026-09-07 14:03:28",
+          "last_seen_at": "2026-09-07 14:03:28",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.44
-    },
-    {
-      "id": "promoted-variant",
-      "name": "Pria misheard: repetition-promoted memory fixes it",
-      "inputs": {
-        "raw_asr": "pria signed off",
-        "formatted": "Pria signed off."
-      },
-      "expected": "Priya signed off.",
-      "actual": "Priya signed off.",
-      "should_intervene": true,
-      "outcome": "useful_intervention",
-      "decisions": [
-        {
-          "token": "Pria",
-          "action": "applied",
-          "reason": "'Pria' phonetically matches active memory 'Priya' (confidence 0.75).",
-          "confidence": 0.75,
-          "replacement": "Priya"
-        }
-      ],
-      "relevant_memory_state": [
-        {
-          "id": 4,
-          "user_id": "default",
-          "canonical_form": "Priya",
-          "phonetic_key": "PRY",
-          "category": "unknown",
-          "status": "active",
-          "confidence": 0.75,
-          "evidence_count": 3,
-          "created_at": "2026-09-06 14:31:15",
-          "updated_at": "2026-09-06 14:31:15",
-          "last_seen_at": "2026-09-06 14:31:15",
-          "correction_count": 0
-        }
-      ],
-      "latency_ms": 0.47
-    },
-    {
-      "id": "lowercase-name",
-      "name": "Formatter failed to capitalize a rare name: still fix it",
-      "inputs": {
-        "raw_asr": "tell aditya it works",
-        "formatted": "Tell aditya it works."
-      },
-      "expected": "Tell Aaditya it works.",
-      "actual": "Tell Aaditya it works.",
-      "should_intervene": true,
-      "outcome": "useful_intervention",
-      "decisions": [
-        {
-          "token": "aditya",
-          "action": "applied",
-          "reason": "'aditya' phonetically matches active memory 'Aaditya' (confidence 0.95).",
-          "confidence": 0.95,
-          "replacement": "Aaditya"
-        }
-      ],
-      "relevant_memory_state": [
-        {
-          "id": 2,
-          "user_id": "default",
-          "canonical_form": "Aaditya",
-          "phonetic_key": "TTY",
-          "category": "unknown",
-          "status": "active",
-          "confidence": 0.95,
-          "evidence_count": 2,
-          "created_at": "2026-09-06 14:31:15",
-          "updated_at": "2026-09-06 14:31:15",
-          "last_seen_at": "2026-09-06 14:31:15",
-          "correction_count": 1
-        }
-      ],
-      "latency_ms": 0.42
-    },
-    {
-      "id": "sentence-start-fruit",
-      "name": "KNOWN LIMITATION: fruit at sentence start gets capitalized, casing signal lost",
-      "inputs": {
-        "raw_asr": "kiwi is my favorite fruit",
-        "formatted": "Kiwi is my favorite fruit."
-      },
-      "expected": "Kiwi is my favorite fruit.",
-      "actual": "Kivi is my favorite fruit.",
-      "should_intervene": false,
-      "outcome": "incorrect_intervention",
-      "decisions": [
-        {
-          "token": "Kiwi",
-          "action": "applied",
-          "reason": "'Kiwi' phonetically matches active memory 'Kivi' (confidence 0.95).",
-          "confidence": 0.95,
-          "replacement": "Kivi"
-        }
-      ],
-      "relevant_memory_state": [
-        {
-          "id": 3,
-          "user_id": "default",
-          "canonical_form": "Kivi",
-          "phonetic_key": "KF",
-          "category": "unknown",
-          "status": "active",
-          "confidence": 0.95,
-          "evidence_count": 1,
-          "created_at": "2026-09-06 14:31:15",
-          "updated_at": "2026-09-06 14:31:15",
-          "last_seen_at": "2026-09-06 14:31:15",
-          "correction_count": 1
-        }
-      ],
-      "latency_ms": 0.37
+      "latency_ms": 0.63
     }
   ]
 }
