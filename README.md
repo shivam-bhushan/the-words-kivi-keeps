@@ -193,7 +193,21 @@ tradeoff below, kept as a labeled case rather than removed.
 
 ## AI use
 
-Built with Claude Code: design discussion, implementation, and eval design
-were done in conversation; all decisions above were made deliberately and the
-code was reviewed and tested end-to-end (`eval/run_eval.py` plus manual CLI
-runs) by the author.
+This system was built in two Claude Code sessions. The initial
+implementation — schema, core pipeline, CLI, first eval pass — was generated
+in an earlier session. It was then substantially reviewed, debugged, and
+revised in a second session: several real defects were found and fixed (a
+response-parsing bug in the LLM integration, a common-word-threshold
+asymmetry between two spellings of the same cluster, a decision-logging
+mismatch between what the LLM path did and what was shown/persisted, the
+sentence-start homograph bug), the corpus was rebuilt for materially better
+coverage, and the category-memory design and the deterministic-vs-LLM
+architecture were reconsidered rather than taken as given.
+
+Across both sessions, scope and architecture were directed by the author, not
+the assistant: what phonetic memory should and shouldn't cover, which
+proposed fixes were principled versus one-off patches and were rejected
+accordingly, and which failure modes were worth fixing versus documenting as
+a deliberate, understood tradeoff. Every change was verified end-to-end —
+including from a completely fresh clone following RUN.md with no prior state
+— before being committed.
