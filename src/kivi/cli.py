@@ -73,6 +73,13 @@ def dictate(
         if llm:
             from kivi.llm import apply_with_llm, relevant_memories
             from kivi.pipeline import record_category_signals, replace_apply_decisions
+            from kivi.config import ANTHROPIC_API_KEY
+
+            if not ANTHROPIC_API_KEY:
+                _print_result(result)
+                console.print("\n[red]--llm requires ANTHROPIC_API_KEY (see RUN.md); "
+                              "the deterministic dictation above still ran and was saved.[/red]")
+                raise typer.Exit(1)
 
             memories = relevant_memories(formatted, store.get_memories(conn))
             text, categories, llm_decisions = apply_with_llm(formatted, memories)

@@ -1,6 +1,6 @@
 # Eval results
 
-59 cases | precision 1.0 | recall 0.97 | avg latency 0.74ms | LLM calls: 0
+59 cases | precision 1.0 | recall 0.97 | avg latency 0.73ms | LLM calls: 0
 
 | case | outcome | actual |
 |---|---|---|

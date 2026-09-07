@@ -1,5 +1,9 @@
 # RUN.md
 
+**Primary review method: completely local application** (CLI + local SQLite
+file). No hosted component, no managed database — everything below runs on
+the reviewing machine.
+
 Tested with Python 3.13 on macOS; any Python ≥ 3.10 should work.
 
 ## Setup
@@ -39,8 +43,10 @@ kivi correct "Ankit" "Ankith"         # (wrong-form, right-form) — also resolv
 kivi correct "Ankit" "Ankith" --category person   # optional: state what kind of term this is
                                                     # (never guessed from spelling — see kivi memories)
 
-# --llm mode also reports inferred categories (person/product/place/other) via
-# a forced tool call; run the flagship dictate --llm twice to see one promote:
+# OPTIONAL — requires ANTHROPIC_API_KEY (see above); skip if you didn't set
+# one, the rest of the walkthrough doesn't depend on it. --llm mode also
+# reports inferred categories (person/product/place/other) via a forced tool
+# call; run the flagship dictate --llm twice to see one promote:
 kivi dictate --llm "ask aditya to review the sarvam kiwi service" \
              "Ask Aditya to review the Sarvam Kiwi service."
 
@@ -74,4 +80,5 @@ kivi reset -y             # or: rm -f kivi.db && kivi init
 ## Versions
 
 Pinned in `requirements.txt`: typer 0.27.2, jellyfish 1.1.0, wordfreq 3.1.1,
-anthropic 0.34.2, python-dotenv 1.0.1, rich 13.8.1.
+anthropic 0.34.2, httpx 0.27.2 (pinned below anthropic's floor -- newer httpx
+drops a kwarg the 0.34.2 SDK still passes), python-dotenv 1.0.1, rich 13.8.1.
