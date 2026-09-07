@@ -51,10 +51,11 @@ EMIT_RESULT_TOOL = {
     "name": "emit_memory_aware_text",
     "description": (
         "Return the corrected dictation text. Also report, for each personal "
-        "vocabulary term above that you substituted or deliberately left alone, "
-        "what kind of thing it refers to -- key the map by the exact canonical "
-        "spelling shown in the vocabulary list, not the word as it appeared in "
-        "the input text."
+        "vocabulary term above, what kind of thing it refers to, and a "
+        "decisions log explaining what you did or did not change and why --"
+        "this is the only record of your reasoning an engineer can inspect "
+        "later, so it must describe what 'output' actually contains, not a "
+        "generic restatement of the instructions."
     ),
     "input_schema": {
         "type": "object",
@@ -68,20 +69,46 @@ EMIT_RESULT_TOOL = {
                     "enum": ["person", "product", "place", "other"],
                 },
             },
+            "decisions": {
+                "type": "array",
+                "description": (
+                    "One entry per vocabulary term above that was phonetically "
+                    "present in the input (substituted or deliberately left as "
+                    "the ordinary word) -- key by the canonical form, not the "
+                    "word as it appeared in the input."
+                ),
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "term": {"type": "string", "description": "The canonical form from the vocabulary list."},
+                        "applied": {"type": "boolean", "description": "Whether you substituted it into the output."},
+                        "reason": {"type": "string", "description": "Why, specific to this sentence."},
+                    },
+                    "required": ["term", "applied", "reason"],
+                },
+            },
         },
-        "required": ["output", "categories"],
+        "required": ["output", "categories", "decisions"],
     },
 }
 
 
-def apply_with_llm(formatted_text: str, memories) -> tuple[str, dict[str, str]]:
+def apply_with_llm(formatted_text: str, memories) -> tuple[str, dict[str, str], list[dict]]:
     """Re-run the formatting step with the personal-vocabulary block injected.
 
-    Returns (corrected_text, categories). `categories` maps a canonical form
-    to the LLM's guess at what kind of thing it is -- an inference, not
-    observed evidence. Callers must not write it into memory_entries.category
-    directly; route it through pipeline.record_category_signals so it earns
-    trust the same way spelling evidence does.
+    Returns (corrected_text, categories, decisions).
+
+    `categories` maps a canonical form to the LLM's guess at what kind of
+    thing it is -- an inference, not observed evidence. Callers must not
+    write it into memory_entries.category directly; route it through
+    pipeline.record_category_signals so it earns trust the same way spelling
+    evidence does.
+
+    `decisions` is the LLM's own account of what it did per term. Callers
+    must use this (via pipeline.replace_apply_decisions) instead of the
+    deterministic pass's decisions when --llm overrides the text -- otherwise
+    the persisted `decisions` rows describe a different code path than the
+    one that actually produced the output.
     """
     if not ANTHROPIC_API_KEY:
         raise RuntimeError("ANTHROPIC_API_KEY is not set; use the default deterministic mode.")
@@ -109,5 +136,7 @@ def apply_with_llm(formatted_text: str, memories) -> tuple[str, dict[str, str]]:
             # drop anything the model tagged that isn't a term we actually
             # asked about, rather than trusting an invented key.
             categories = {k: v for k, v in raw_categories.items() if k in valid_forms}
-            return output, categories
+            raw_decisions = data.get("decisions") or []
+            decisions = [d for d in raw_decisions if d.get("term") in valid_forms]
+            return output, categories, decisions
     raise RuntimeError(f"no tool_use block in LLM response: {response.content!r}")

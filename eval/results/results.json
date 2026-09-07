@@ -10,7 +10,7 @@
     "intervention_precision": 0.842,
     "intervention_recall": 1.0,
     "avg_latency_ms": 0.7,
-    "max_latency_ms": 0.84,
+    "max_latency_ms": 0.91,
     "llm_calls": 0,
     "llm_cost_usd": 0.0,
     "db_size_bytes_after_seed_plus_one_dictation": 81920,
@@ -52,13 +52,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:03:25",
-          "updated_at": "2026-09-07 14:03:25",
-          "last_seen_at": "2026-09-07 14:03:25",
+          "created_at": "2026-09-07 14:28:58",
+          "updated_at": "2026-09-07 14:28:58",
+          "last_seen_at": "2026-09-07 14:28:58",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.77
+      "latency_ms": 0.72
     },
     {
       "id": "promoted-meera",
@@ -90,13 +90,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:03:25",
-          "updated_at": "2026-09-07 14:03:25",
-          "last_seen_at": "2026-09-07 14:03:25",
+          "created_at": "2026-09-07 14:28:58",
+          "updated_at": "2026-09-07 14:28:58",
+          "last_seen_at": "2026-09-07 14:28:58",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.78
+      "latency_ms": 0.73
     },
     {
       "id": "promoted-nikhil",
@@ -128,9 +128,9 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:03:25",
-          "updated_at": "2026-09-07 14:03:25",
-          "last_seen_at": "2026-09-07 14:03:25",
+          "created_at": "2026-09-07 14:28:58",
+          "updated_at": "2026-09-07 14:28:58",
+          "last_seen_at": "2026-09-07 14:28:58",
           "correction_count": 0
         }
       ],
@@ -166,13 +166,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:03:25",
-          "updated_at": "2026-09-07 14:03:25",
-          "last_seen_at": "2026-09-07 14:03:25",
+          "created_at": "2026-09-07 14:28:58",
+          "updated_at": "2026-09-07 14:28:58",
+          "last_seen_at": "2026-09-07 14:28:58",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.79
+      "latency_ms": 0.82
     },
     {
       "id": "promoted-sana",
@@ -204,13 +204,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:03:25",
-          "updated_at": "2026-09-07 14:03:25",
-          "last_seen_at": "2026-09-07 14:03:25",
+          "created_at": "2026-09-07 14:28:58",
+          "updated_at": "2026-09-07 14:28:58",
+          "last_seen_at": "2026-09-07 14:28:58",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.71
+      "latency_ms": 0.68
     },
     {
       "id": "promoted-arjun",
@@ -242,13 +242,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:03:25",
-          "updated_at": "2026-09-07 14:03:25",
-          "last_seen_at": "2026-09-07 14:03:25",
+          "created_at": "2026-09-07 14:28:58",
+          "updated_at": "2026-09-07 14:28:58",
+          "last_seen_at": "2026-09-07 14:28:58",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.74
+      "latency_ms": 0.71
     },
     {
       "id": "promoted-yash",
@@ -280,13 +280,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:03:25",
-          "updated_at": "2026-09-07 14:03:25",
-          "last_seen_at": "2026-09-07 14:03:25",
+          "created_at": "2026-09-07 14:28:58",
+          "updated_at": "2026-09-07 14:28:58",
+          "last_seen_at": "2026-09-07 14:28:58",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.7
+      "latency_ms": 0.69
     },
     {
       "id": "promoted-aarav",
@@ -318,13 +318,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:03:25",
-          "updated_at": "2026-09-07 14:03:25",
-          "last_seen_at": "2026-09-07 14:03:25",
+          "created_at": "2026-09-07 14:28:58",
+          "updated_at": "2026-09-07 14:28:58",
+          "last_seen_at": "2026-09-07 14:28:58",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.69
+      "latency_ms": 0.73
     },
     {
       "id": "promoted-kavya",
@@ -356,13 +356,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:03:25",
-          "updated_at": "2026-09-07 14:03:25",
-          "last_seen_at": "2026-09-07 14:03:25",
+          "created_at": "2026-09-07 14:28:58",
+          "updated_at": "2026-09-07 14:28:58",
+          "last_seen_at": "2026-09-07 14:28:58",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.73
+      "latency_ms": 0.68
     },
     {
       "id": "promoted-riya",
@@ -394,13 +394,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:03:25",
-          "updated_at": "2026-09-07 14:03:25",
-          "last_seen_at": "2026-09-07 14:03:25",
+          "created_at": "2026-09-07 14:28:58",
+          "updated_at": "2026-09-07 14:28:58",
+          "last_seen_at": "2026-09-07 14:28:58",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.68
+      "latency_ms": 0.76
     },
     {
       "id": "already-correct-priya",
@@ -432,9 +432,9 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:03:25",
-          "updated_at": "2026-09-07 14:03:25",
-          "last_seen_at": "2026-09-07 14:03:25",
+          "created_at": "2026-09-07 14:28:59",
+          "updated_at": "2026-09-07 14:28:59",
+          "last_seen_at": "2026-09-07 14:28:59",
           "correction_count": 0
         },
         {
@@ -446,13 +446,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:25",
-          "updated_at": "2026-09-07 14:03:25",
-          "last_seen_at": "2026-09-07 14:03:25",
+          "created_at": "2026-09-07 14:28:59",
+          "updated_at": "2026-09-07 14:28:59",
+          "last_seen_at": "2026-09-07 14:28:59",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.76
+      "latency_ms": 0.77
     },
     {
       "id": "already-correct-meera",
@@ -484,9 +484,9 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:03:25",
-          "updated_at": "2026-09-07 14:03:25",
-          "last_seen_at": "2026-09-07 14:03:25",
+          "created_at": "2026-09-07 14:28:59",
+          "updated_at": "2026-09-07 14:28:59",
+          "last_seen_at": "2026-09-07 14:28:59",
           "correction_count": 0
         },
         {
@@ -498,13 +498,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:25",
-          "updated_at": "2026-09-07 14:03:25",
-          "last_seen_at": "2026-09-07 14:03:25",
+          "created_at": "2026-09-07 14:28:59",
+          "updated_at": "2026-09-07 14:28:59",
+          "last_seen_at": "2026-09-07 14:28:59",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.74
+      "latency_ms": 0.7
     },
     {
       "id": "already-correct-nikhil",
@@ -536,9 +536,9 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:03:25",
-          "updated_at": "2026-09-07 14:03:25",
-          "last_seen_at": "2026-09-07 14:03:25",
+          "created_at": "2026-09-07 14:28:59",
+          "updated_at": "2026-09-07 14:28:59",
+          "last_seen_at": "2026-09-07 14:28:59",
           "correction_count": 0
         },
         {
@@ -550,13 +550,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:25",
-          "updated_at": "2026-09-07 14:03:25",
-          "last_seen_at": "2026-09-07 14:03:25",
+          "created_at": "2026-09-07 14:28:59",
+          "updated_at": "2026-09-07 14:28:59",
+          "last_seen_at": "2026-09-07 14:28:59",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.72
+      "latency_ms": 0.73
     },
     {
       "id": "already-correct-ananya",
@@ -588,9 +588,9 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:03:26",
-          "updated_at": "2026-09-07 14:03:26",
-          "last_seen_at": "2026-09-07 14:03:26",
+          "created_at": "2026-09-07 14:28:59",
+          "updated_at": "2026-09-07 14:28:59",
+          "last_seen_at": "2026-09-07 14:28:59",
           "correction_count": 0
         },
         {
@@ -602,13 +602,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:26",
-          "updated_at": "2026-09-07 14:03:26",
-          "last_seen_at": "2026-09-07 14:03:26",
+          "created_at": "2026-09-07 14:28:59",
+          "updated_at": "2026-09-07 14:28:59",
+          "last_seen_at": "2026-09-07 14:28:59",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.76
+      "latency_ms": 0.73
     },
     {
       "id": "corrected-aaditya",
@@ -647,13 +647,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 4,
-          "created_at": "2026-09-07 14:03:26",
-          "updated_at": "2026-09-07 14:03:26",
-          "last_seen_at": "2026-09-07 14:03:26",
+          "created_at": "2026-09-07 14:28:59",
+          "updated_at": "2026-09-07 14:28:59",
+          "last_seen_at": "2026-09-07 14:28:59",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.76
+      "latency_ms": 0.77
     },
     {
       "id": "corrected-ishaan",
@@ -692,13 +692,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 4,
-          "created_at": "2026-09-07 14:03:26",
-          "updated_at": "2026-09-07 14:03:26",
-          "last_seen_at": "2026-09-07 14:03:26",
+          "created_at": "2026-09-07 14:28:59",
+          "updated_at": "2026-09-07 14:28:59",
+          "last_seen_at": "2026-09-07 14:28:59",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.8
+      "latency_ms": 0.76
     },
     {
       "id": "corrected-vihaan",
@@ -737,13 +737,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 4,
-          "created_at": "2026-09-07 14:03:26",
-          "updated_at": "2026-09-07 14:03:26",
-          "last_seen_at": "2026-09-07 14:03:26",
+          "created_at": "2026-09-07 14:28:59",
+          "updated_at": "2026-09-07 14:28:59",
+          "last_seen_at": "2026-09-07 14:28:59",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.76
+      "latency_ms": 0.81
     },
     {
       "id": "corrected-simran",
@@ -782,13 +782,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 4,
-          "created_at": "2026-09-07 14:03:26",
-          "updated_at": "2026-09-07 14:03:26",
-          "last_seen_at": "2026-09-07 14:03:26",
+          "created_at": "2026-09-07 14:28:59",
+          "updated_at": "2026-09-07 14:28:59",
+          "last_seen_at": "2026-09-07 14:28:59",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.84
+      "latency_ms": 0.73
     },
     {
       "id": "corrected-rohan",
@@ -827,13 +827,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 4,
-          "created_at": "2026-09-07 14:03:26",
-          "updated_at": "2026-09-07 14:03:26",
-          "last_seen_at": "2026-09-07 14:03:26",
+          "created_at": "2026-09-07 14:28:59",
+          "updated_at": "2026-09-07 14:28:59",
+          "last_seen_at": "2026-09-07 14:28:59",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.76
+      "latency_ms": 0.83
     },
     {
       "id": "corrected-diya",
@@ -872,9 +872,9 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:26",
-          "updated_at": "2026-09-07 14:03:26",
-          "last_seen_at": "2026-09-07 14:03:26",
+          "created_at": "2026-09-07 14:28:59",
+          "updated_at": "2026-09-07 14:28:59",
+          "last_seen_at": "2026-09-07 14:28:59",
           "correction_count": 1
         }
       ],
@@ -910,13 +910,13 @@
           "status": "ambiguous",
           "confidence": 0.2,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:26",
-          "updated_at": "2026-09-07 14:03:26",
-          "last_seen_at": "2026-09-07 14:03:26",
+          "created_at": "2026-09-07 14:28:59",
+          "updated_at": "2026-09-07 14:28:59",
+          "last_seen_at": "2026-09-07 14:28:59",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.67
+      "latency_ms": 0.64
     },
     {
       "id": "ambiguous-kabir",
@@ -948,13 +948,13 @@
           "status": "ambiguous",
           "confidence": 0.2,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:26",
-          "updated_at": "2026-09-07 14:03:26",
-          "last_seen_at": "2026-09-07 14:03:26",
+          "created_at": "2026-09-07 14:28:59",
+          "updated_at": "2026-09-07 14:28:59",
+          "last_seen_at": "2026-09-07 14:28:59",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.66
+      "latency_ms": 0.67
     },
     {
       "id": "candidate-tanvi",
@@ -978,13 +978,13 @@
           "status": "candidate",
           "confidence": 0.2,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:26",
-          "updated_at": "2026-09-07 14:03:26",
-          "last_seen_at": "2026-09-07 14:03:26",
+          "created_at": "2026-09-07 14:28:59",
+          "updated_at": "2026-09-07 14:28:59",
+          "last_seen_at": "2026-09-07 14:28:59",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.66
+      "latency_ms": 0.62
     },
     {
       "id": "candidate-devansh",
@@ -1008,13 +1008,13 @@
           "status": "candidate",
           "confidence": 0.2,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:26",
-          "updated_at": "2026-09-07 14:03:26",
-          "last_seen_at": "2026-09-07 14:03:26",
+          "created_at": "2026-09-07 14:28:59",
+          "updated_at": "2026-09-07 14:28:59",
+          "last_seen_at": "2026-09-07 14:28:59",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.76
+      "latency_ms": 0.67
     },
     {
       "id": "collision-kiwi-product",
@@ -1046,13 +1046,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:26",
-          "updated_at": "2026-09-07 14:03:26",
-          "last_seen_at": "2026-09-07 14:03:26",
+          "created_at": "2026-09-07 14:28:59",
+          "updated_at": "2026-09-07 14:28:59",
+          "last_seen_at": "2026-09-07 14:28:59",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.7
+      "latency_ms": 0.83
     },
     {
       "id": "collision-kiwi-literal",
@@ -1091,9 +1091,9 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:26",
-          "updated_at": "2026-09-07 14:03:26",
-          "last_seen_at": "2026-09-07 14:03:26",
+          "created_at": "2026-09-07 14:28:59",
+          "updated_at": "2026-09-07 14:28:59",
+          "last_seen_at": "2026-09-07 14:28:59",
           "correction_count": 1
         },
         {
@@ -1105,13 +1105,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:26",
-          "updated_at": "2026-09-07 14:03:26",
-          "last_seen_at": "2026-09-07 14:03:26",
+          "created_at": "2026-09-07 14:28:59",
+          "updated_at": "2026-09-07 14:28:59",
+          "last_seen_at": "2026-09-07 14:28:59",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.7
+      "latency_ms": 0.6
     },
     {
       "id": "collision-kiwi-sentence-start",
@@ -1143,13 +1143,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:26",
-          "updated_at": "2026-09-07 14:03:26",
-          "last_seen_at": "2026-09-07 14:03:26",
+          "created_at": "2026-09-07 14:28:59",
+          "updated_at": "2026-09-07 14:28:59",
+          "last_seen_at": "2026-09-07 14:28:59",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.58
+      "latency_ms": 0.6
     },
     {
       "id": "collision-lift-product",
@@ -1181,13 +1181,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:26",
-          "updated_at": "2026-09-07 14:03:26",
-          "last_seen_at": "2026-09-07 14:03:26",
+          "created_at": "2026-09-07 14:28:59",
+          "updated_at": "2026-09-07 14:28:59",
+          "last_seen_at": "2026-09-07 14:28:59",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.72
+      "latency_ms": 0.69
     },
     {
       "id": "collision-lift-literal",
@@ -1219,9 +1219,9 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:26",
-          "updated_at": "2026-09-07 14:03:26",
-          "last_seen_at": "2026-09-07 14:03:26",
+          "created_at": "2026-09-07 14:29:00",
+          "updated_at": "2026-09-07 14:29:00",
+          "last_seen_at": "2026-09-07 14:29:00",
           "correction_count": 1
         }
       ],
@@ -1257,13 +1257,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:26",
-          "updated_at": "2026-09-07 14:03:26",
-          "last_seen_at": "2026-09-07 14:03:26",
+          "created_at": "2026-09-07 14:29:00",
+          "updated_at": "2026-09-07 14:29:00",
+          "last_seen_at": "2026-09-07 14:29:00",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.61
+      "latency_ms": 0.6
     },
     {
       "id": "collision-zoom-product",
@@ -1295,13 +1295,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:26",
-          "updated_at": "2026-09-07 14:03:26",
-          "last_seen_at": "2026-09-07 14:03:26",
+          "created_at": "2026-09-07 14:29:00",
+          "updated_at": "2026-09-07 14:29:00",
+          "last_seen_at": "2026-09-07 14:29:00",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.72
+      "latency_ms": 0.67
     },
     {
       "id": "collision-zoom-literal",
@@ -1333,13 +1333,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:27",
-          "updated_at": "2026-09-07 14:03:27",
-          "last_seen_at": "2026-09-07 14:03:27",
+          "created_at": "2026-09-07 14:29:00",
+          "updated_at": "2026-09-07 14:29:00",
+          "last_seen_at": "2026-09-07 14:29:00",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.67
+      "latency_ms": 0.73
     },
     {
       "id": "collision-zoom-sentence-start",
@@ -1371,9 +1371,9 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:27",
-          "updated_at": "2026-09-07 14:03:27",
-          "last_seen_at": "2026-09-07 14:03:27",
+          "created_at": "2026-09-07 14:29:00",
+          "updated_at": "2026-09-07 14:29:00",
+          "last_seen_at": "2026-09-07 14:29:00",
           "correction_count": 1
         }
       ],
@@ -1409,13 +1409,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:27",
-          "updated_at": "2026-09-07 14:03:27",
-          "last_seen_at": "2026-09-07 14:03:27",
+          "created_at": "2026-09-07 14:29:00",
+          "updated_at": "2026-09-07 14:29:00",
+          "last_seen_at": "2026-09-07 14:29:00",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.66
+      "latency_ms": 0.68
     },
     {
       "id": "collision-zero-literal",
@@ -1447,13 +1447,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:27",
-          "updated_at": "2026-09-07 14:03:27",
-          "last_seen_at": "2026-09-07 14:03:27",
+          "created_at": "2026-09-07 14:29:00",
+          "updated_at": "2026-09-07 14:29:00",
+          "last_seen_at": "2026-09-07 14:29:00",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.69
+      "latency_ms": 0.57
     },
     {
       "id": "collision-zero-sentence-start",
@@ -1485,13 +1485,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:27",
-          "updated_at": "2026-09-07 14:03:27",
-          "last_seen_at": "2026-09-07 14:03:27",
+          "created_at": "2026-09-07 14:29:00",
+          "updated_at": "2026-09-07 14:29:00",
+          "last_seen_at": "2026-09-07 14:29:00",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.6
+      "latency_ms": 0.57
     },
     {
       "id": "collision-fire-product",
@@ -1523,13 +1523,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:27",
-          "updated_at": "2026-09-07 14:03:27",
-          "last_seen_at": "2026-09-07 14:03:27",
+          "created_at": "2026-09-07 14:29:00",
+          "updated_at": "2026-09-07 14:29:00",
+          "last_seen_at": "2026-09-07 14:29:00",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.68
+      "latency_ms": 0.69
     },
     {
       "id": "collision-fire-literal",
@@ -1561,13 +1561,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:27",
-          "updated_at": "2026-09-07 14:03:27",
-          "last_seen_at": "2026-09-07 14:03:27",
+          "created_at": "2026-09-07 14:29:00",
+          "updated_at": "2026-09-07 14:29:00",
+          "last_seen_at": "2026-09-07 14:29:00",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.72
+      "latency_ms": 0.64
     },
     {
       "id": "collision-fire-sentence-start",
@@ -1599,13 +1599,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:27",
-          "updated_at": "2026-09-07 14:03:27",
-          "last_seen_at": "2026-09-07 14:03:27",
+          "created_at": "2026-09-07 14:29:00",
+          "updated_at": "2026-09-07 14:29:00",
+          "last_seen_at": "2026-09-07 14:29:00",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.58
+      "latency_ms": 0.66
     },
     {
       "id": "collision-flicker-product",
@@ -1637,13 +1637,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:27",
-          "updated_at": "2026-09-07 14:03:27",
-          "last_seen_at": "2026-09-07 14:03:27",
+          "created_at": "2026-09-07 14:29:00",
+          "updated_at": "2026-09-07 14:29:00",
+          "last_seen_at": "2026-09-07 14:29:00",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.76
+      "latency_ms": 0.77
     },
     {
       "id": "collision-flicker-literal",
@@ -1675,13 +1675,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:27",
-          "updated_at": "2026-09-07 14:03:27",
-          "last_seen_at": "2026-09-07 14:03:27",
+          "created_at": "2026-09-07 14:29:00",
+          "updated_at": "2026-09-07 14:29:00",
+          "last_seen_at": "2026-09-07 14:29:00",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.71
+      "latency_ms": 0.65
     },
     {
       "id": "collision-flicker-sentence-start",
@@ -1713,13 +1713,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:27",
-          "updated_at": "2026-09-07 14:03:27",
-          "last_seen_at": "2026-09-07 14:03:27",
+          "created_at": "2026-09-07 14:29:00",
+          "updated_at": "2026-09-07 14:29:00",
+          "last_seen_at": "2026-09-07 14:29:00",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.78
+      "latency_ms": 0.91
     },
     {
       "id": "nearmiss-fiverr",
@@ -1751,13 +1751,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:03:27",
-          "updated_at": "2026-09-07 14:03:27",
-          "last_seen_at": "2026-09-07 14:03:27",
+          "created_at": "2026-09-07 14:29:00",
+          "updated_at": "2026-09-07 14:29:00",
+          "last_seen_at": "2026-09-07 14:29:00",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.7
+      "latency_ms": 0.83
     },
     {
       "id": "nearmiss-scribd",
@@ -1789,13 +1789,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:03:27",
-          "updated_at": "2026-09-07 14:03:27",
-          "last_seen_at": "2026-09-07 14:03:27",
+          "created_at": "2026-09-07 14:29:00",
+          "updated_at": "2026-09-07 14:29:00",
+          "last_seen_at": "2026-09-07 14:29:00",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.81
+      "latency_ms": 0.84
     },
     {
       "id": "plain-sarvam",
@@ -1827,13 +1827,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:03:27",
-          "updated_at": "2026-09-07 14:03:27",
-          "last_seen_at": "2026-09-07 14:03:27",
+          "created_at": "2026-09-07 14:29:00",
+          "updated_at": "2026-09-07 14:29:00",
+          "last_seen_at": "2026-09-07 14:29:00",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.75
+      "latency_ms": 0.71
     },
     {
       "id": "plain-figma",
@@ -1865,13 +1865,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:03:27",
-          "updated_at": "2026-09-07 14:03:27",
-          "last_seen_at": "2026-09-07 14:03:27",
+          "created_at": "2026-09-07 14:29:00",
+          "updated_at": "2026-09-07 14:29:00",
+          "last_seen_at": "2026-09-07 14:29:00",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.68
+      "latency_ms": 0.74
     },
     {
       "id": "plain-coda",
@@ -1903,13 +1903,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:03:27",
-          "updated_at": "2026-09-07 14:03:27",
-          "last_seen_at": "2026-09-07 14:03:27",
+          "created_at": "2026-09-07 14:29:00",
+          "updated_at": "2026-09-07 14:29:00",
+          "last_seen_at": "2026-09-07 14:29:00",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.67
+      "latency_ms": 0.81
     },
     {
       "id": "plain-asana",
@@ -1941,9 +1941,9 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:03:27",
-          "updated_at": "2026-09-07 14:03:27",
-          "last_seen_at": "2026-09-07 14:03:27",
+          "created_at": "2026-09-07 14:29:01",
+          "updated_at": "2026-09-07 14:29:01",
+          "last_seen_at": "2026-09-07 14:29:01",
           "correction_count": 0
         }
       ],
@@ -1979,13 +1979,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:03:27",
-          "updated_at": "2026-09-07 14:03:27",
-          "last_seen_at": "2026-09-07 14:03:27",
+          "created_at": "2026-09-07 14:29:01",
+          "updated_at": "2026-09-07 14:29:01",
+          "last_seen_at": "2026-09-07 14:29:01",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.72
+      "latency_ms": 0.74
     },
     {
       "id": "candidate-loom",
@@ -2009,9 +2009,9 @@
           "status": "candidate",
           "confidence": 0.2,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:03:27",
-          "updated_at": "2026-09-07 14:03:27",
-          "last_seen_at": "2026-09-07 14:03:27",
+          "created_at": "2026-09-07 14:29:01",
+          "updated_at": "2026-09-07 14:29:01",
+          "last_seen_at": "2026-09-07 14:29:01",
           "correction_count": 0
         }
       ],
@@ -2045,7 +2045,7 @@
         }
       ],
       "relevant_memory_state": [],
-      "latency_ms": 0.83
+      "latency_ms": 0.73
     },
     {
       "id": "common-word-plain",
@@ -2060,7 +2060,7 @@
       "outcome": "correct_abstention",
       "decisions": [],
       "relevant_memory_state": [],
-      "latency_ms": 0.59
+      "latency_ms": 0.66
     },
     {
       "id": "common-word-capitalized-no-memory",
@@ -2083,7 +2083,7 @@
         }
       ],
       "relevant_memory_state": [],
-      "latency_ms": 0.59
+      "latency_ms": 0.62
     },
     {
       "id": "possessive-fresh",
@@ -2107,13 +2107,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 4,
-          "created_at": "2026-09-07 14:03:28",
-          "updated_at": "2026-09-07 14:03:28",
-          "last_seen_at": "2026-09-07 14:03:28",
+          "created_at": "2026-09-07 14:29:01",
+          "updated_at": "2026-09-07 14:29:01",
+          "last_seen_at": "2026-09-07 14:29:01",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.57
+      "latency_ms": 0.67
     },
     {
       "id": "possessive-misspelled",
@@ -2145,13 +2145,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 4,
-          "created_at": "2026-09-07 14:03:28",
-          "updated_at": "2026-09-07 14:03:28",
-          "last_seen_at": "2026-09-07 14:03:28",
+          "created_at": "2026-09-07 14:29:01",
+          "updated_at": "2026-09-07 14:29:01",
+          "last_seen_at": "2026-09-07 14:29:01",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.69
+      "latency_ms": 0.65
     },
     {
       "id": "multi-token-name-and-product",
@@ -2190,9 +2190,9 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:03:28",
-          "updated_at": "2026-09-07 14:03:28",
-          "last_seen_at": "2026-09-07 14:03:28",
+          "created_at": "2026-09-07 14:29:01",
+          "updated_at": "2026-09-07 14:29:01",
+          "last_seen_at": "2026-09-07 14:29:01",
           "correction_count": 0
         },
         {
@@ -2204,13 +2204,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:03:28",
-          "updated_at": "2026-09-07 14:03:28",
-          "last_seen_at": "2026-09-07 14:03:28",
+          "created_at": "2026-09-07 14:29:01",
+          "updated_at": "2026-09-07 14:29:01",
+          "last_seen_at": "2026-09-07 14:29:01",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.76
+      "latency_ms": 0.78
     },
     {
       "id": "lowercase-name-uncapitalized",
@@ -2242,13 +2242,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 4,
-          "created_at": "2026-09-07 14:03:28",
-          "updated_at": "2026-09-07 14:03:28",
-          "last_seen_at": "2026-09-07 14:03:28",
+          "created_at": "2026-09-07 14:29:01",
+          "updated_at": "2026-09-07 14:29:01",
+          "last_seen_at": "2026-09-07 14:29:01",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.62
+      "latency_ms": 0.54
     },
     {
       "id": "exact-match-no-decision",
@@ -2272,13 +2272,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:03:28",
-          "updated_at": "2026-09-07 14:03:28",
-          "last_seen_at": "2026-09-07 14:03:28",
+          "created_at": "2026-09-07 14:29:01",
+          "updated_at": "2026-09-07 14:29:01",
+          "last_seen_at": "2026-09-07 14:29:01",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.63
+      "latency_ms": 0.72
     }
   ]
 }

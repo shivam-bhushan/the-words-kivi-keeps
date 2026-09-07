@@ -111,6 +111,14 @@ dictation (raw ASR + formatted) ──► APPLY ──► memory-aware text + de
   shows how the same retrieved memories are rendered into the real formatting
   prompt (`kivi dictate --llm` runs it); only memories phonetically touched by
   the current text are injected, so the prompt never grows with total memory.
+  The LLM call is a forced tool call (`EMIT_RESULT_TOOL`), not free-text JSON
+  parsing, and returns its own per-term decisions log alongside the text --
+  `--llm` replaces the deterministic apply-phase `decisions` rows (in the DB,
+  not just on screen) with the LLM's own reasoning, so `kivi explain` never
+  shows an explanation for a code path that isn't the one that ran. Learn-
+  phase rows (candidate/promotion/ambiguity) are untouched either way, since
+  learning always reads the formatted text through the same deterministic
+  path regardless of which apply mode produced the output.
 - **Storage** (SQLite, `migrations/001_init.sql`): `memory_entries` (cluster,
   canonical form, status, confidence), `memory_variants` (every observed
   surface form with its signal type and source dictation — the evidence

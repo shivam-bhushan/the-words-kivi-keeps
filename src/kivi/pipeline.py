@@ -358,3 +358,40 @@ def record_category_signals(conn, dictation_id: int, categories: dict[str, str],
 
     conn.commit()
     return signals
+
+
+def replace_apply_decisions(conn, dictation_id: int, llm_decisions: list[dict],
+                            memories) -> list[Decision]:
+    """When --llm overrides the deterministic apply step's text, the
+    deterministic apply_decisions rows already persisted for this dictation
+    describe a different code path than the one that actually produced the
+    output. Delete those rows and replace them with the LLM's own account of
+    what it did per term, so `kivi explain` and `kivi dictate` both describe
+    the same reasoning as the text on screen. Learn-phase rows (candidate/
+    promotion/ambiguity) are untouched -- learning always reads the
+    formatted text via the same deterministic path regardless of which
+    apply mode ran."""
+    store.delete_apply_decisions(conn, dictation_id)
+    by_form = {m["canonical_form"]: m for m in memories}
+
+    decisions: list[Decision] = []
+    for d in llm_decisions:
+        term = d.get("term", "")
+        applied = bool(d.get("applied"))
+        reason = d.get("reason", "")
+        m = by_form.get(term)
+        decision = Decision(
+            token=term,
+            action="applied" if applied else "abstained_llm",
+            memory_id=m["id"] if m else None,
+            confidence=m["confidence"] if m else None,
+            replacement=term if applied else None,
+            reason=reason,
+        )
+        decisions.append(decision)
+        store.insert_decision(conn, dictation_id, memory_id=decision.memory_id,
+                              token_span=decision.token, action=decision.action,
+                              confidence=decision.confidence, reason=decision.reason)
+
+    conn.commit()
+    return decisions

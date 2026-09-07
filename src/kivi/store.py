@@ -140,6 +140,17 @@ def get_decisions(conn: sqlite3.Connection, dictation_id: int) -> list[sqlite3.R
     ).fetchall()
 
 
+def delete_apply_decisions(conn: sqlite3.Connection, dictation_id: int) -> None:
+    """Remove apply-phase decision rows (action not starting 'learned_'),
+    leaving learn-phase rows untouched. Used when --llm overrides the
+    deterministic apply step, so persisted decisions describe the code path
+    that actually produced the output -- see pipeline.replace_apply_decisions."""
+    conn.execute(
+        "DELETE FROM decisions WHERE dictation_id = ? AND action NOT LIKE 'learned_%'",
+        (dictation_id,),
+    )
+
+
 def get_variants(conn: sqlite3.Connection, memory_id: int) -> list[sqlite3.Row]:
     return conn.execute(
         "SELECT * FROM memory_variants WHERE memory_id = ? ORDER BY id", (memory_id,)

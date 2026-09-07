@@ -30,6 +30,7 @@ ACTION_STYLES = {
     "abstained_ambiguous": "yellow",
     "abstained_common_word": "yellow",
     "abstained_no_match": "dim",
+    "abstained_llm": "yellow",
 }
 
 
@@ -71,12 +72,21 @@ def dictate(
         category_signals = []
         if llm:
             from kivi.llm import apply_with_llm, relevant_memories
-            from kivi.pipeline import record_category_signals
+            from kivi.pipeline import record_category_signals, replace_apply_decisions
 
             memories = relevant_memories(formatted, store.get_memories(conn))
-            text, categories = apply_with_llm(formatted, memories)
+            text, categories, llm_decisions = apply_with_llm(formatted, memories)
             result.memory_aware_text = text
             store.set_memory_aware_text(conn, result.dictation_id, text)
+            # The deterministic apply_decisions already in result.decisions
+            # describe a code path that didn't produce this text -- replace
+            # them (in the DB and here) with the LLM's own reasoning so
+            # `kivi explain` matches what's on screen. Learn-phase decisions
+            # (candidate/promotion/ambiguity) are unaffected and kept.
+            applied_decisions = replace_apply_decisions(
+                conn, result.dictation_id, llm_decisions, memories)
+            learn_only = [d for d in result.decisions if d.action.startswith("learned_")]
+            result.decisions = applied_decisions + learn_only
             category_signals = record_category_signals(
                 conn, result.dictation_id, categories, memories)
         _print_result(result)
