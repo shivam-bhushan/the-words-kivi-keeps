@@ -222,11 +222,32 @@ for right, wrong in NAMES_PROMOTED[:4]:
               raw, fmt, fmt, False)
 
 # --- corrected names: correction-tier confidence fixes a new misspelling --
+# Template 4 (non-sentence-start, and not one of the 0/1/2 templates used
+# during seeding) so this is a genuinely fresh sentence testing what it's
+# meant to test -- whether explicit correction fires -- independent of the
+# sentence-start gate below, which "Rohan"/"Diya" would otherwise also trip
+# since both cross the common-word threshold.
 for right, wrong in NAMES_CORRECTED:
-    raw, fmt = name_sentence(wrong, 6)
-    raw2, fmt2 = name_sentence(right, 6)
+    raw, fmt = name_sentence(wrong, 4)
+    raw2, fmt2 = name_sentence(right, 4)
     add_case(f"corrected-{right.lower()}", f"Explicit correction for '{right}' fires on a fresh misspelling",
               raw, fmt, fmt2, True)
+
+# --- known tradeoff: correction-backed but common-word-crossing NAMES hit
+# the same sentence-start information gap as the collision products. Fixing
+# the false-positive there (Kivi/kiwi) necessarily means this symmetric
+# false-negative is possible too: "Rohaan mentioned..." and "Kiwi is my
+# favorite fruit" are identical to the deterministic path (capitalized,
+# sentence-start, common-word match, correction-backed) with opposite
+# correct answers -- casing alone cannot distinguish them. Documented here
+# deliberately, the same way the collision-product cases are, rather than
+# left as an unexplained failure.
+add_case("corrected-name-sentence-start-tradeoff",
+          "KNOWN TRADEOFF: correction-backed common-word name misses at sentence start "
+          "(same information gap as the collision-product cases, opposite ground truth)",
+          "rohaan mentioned the deadline moved to friday",
+          "Rohaan mentioned the deadline moved to Friday.",
+          "Rohan mentioned the deadline moved to Friday.", True)
 
 # --- ambiguous names: still waiting for a correction ----------------------
 for right, wrong in NAMES_AMBIGUOUS:

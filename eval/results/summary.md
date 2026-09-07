@@ -1,6 +1,6 @@
 # Eval results
 
-58 cases | precision 0.842 | recall 1.0 | avg latency 0.7ms | LLM calls: 0
+59 cases | precision 1.0 | recall 0.97 | avg latency 0.74ms | LLM calls: 0
 
 | case | outcome | actual |
 |---|---|---|
@@ -18,34 +18,35 @@
 | already-correct-meera | correct_abstention | Tell Meera the deck is ready for review. |
 | already-correct-nikhil | correct_abstention | Tell Nikhil the deck is ready for review. |
 | already-correct-ananya | correct_abstention | Tell Ananya the deck is ready for review. |
-| corrected-aaditya | useful_intervention | Aaditya mentioned the deadline moved to Friday. |
-| corrected-ishaan | useful_intervention | Ishaan mentioned the deadline moved to Friday. |
-| corrected-vihaan | useful_intervention | Vihaan mentioned the deadline moved to Friday. |
-| corrected-simran | useful_intervention | Simran mentioned the deadline moved to Friday. |
-| corrected-rohan | useful_intervention | Rohan mentioned the deadline moved to Friday. |
-| corrected-diya | useful_intervention | Diya mentioned the deadline moved to Friday. |
+| corrected-aaditya | useful_intervention | Remind me to email Aaditya tomorrow. |
+| corrected-ishaan | useful_intervention | Remind me to email Ishaan tomorrow. |
+| corrected-vihaan | useful_intervention | Remind me to email Vihaan tomorrow. |
+| corrected-simran | useful_intervention | Remind me to email Simran tomorrow. |
+| corrected-rohan | useful_intervention | Remind me to email Rohan tomorrow. |
+| corrected-diya | useful_intervention | Remind me to email Diya tomorrow. |
+| corrected-name-sentence-start-tradeoff | missed_correction | Rohaan mentioned the deadline moved to Friday. |
 | ambiguous-ankith | correct_abstention | Send the invoice to Ankith please. |
 | ambiguous-kabir | correct_abstention | Send the invoice to Kabir please. |
 | candidate-tanvi | correct_abstention | Tanavi is joining the standup at ten. |
 | candidate-devansh | correct_abstention | Devanash is joining the standup at ten. |
 | collision-kiwi-product | useful_intervention | Can we move this conversation to Kivi? |
 | collision-kiwi-literal | correct_abstention | I ate a kiwi for breakfast. |
-| collision-kiwi-sentence-start | incorrect_intervention | Kivi is my favorite fruit. |
+| collision-kiwi-sentence-start | correct_abstention | Kiwi is my favorite fruit. |
 | collision-lift-product | useful_intervention | Can we move this conversation to Lyft? |
 | collision-lift-literal | correct_abstention | Please lift the box carefully. |
-| collision-lift-sentence-start | incorrect_intervention | Lyft with your legs, not your back. |
+| collision-lift-sentence-start | correct_abstention | Lift with your legs, not your back. |
 | collision-zoom-product | useful_intervention | Can we move this conversation to Xoom? |
 | collision-zoom-literal | correct_abstention | The car began to zoom down the highway. |
-| collision-zoom-sentence-start | incorrect_intervention | Xoom lenses are heavier than primes. |
+| collision-zoom-sentence-start | correct_abstention | Zoom lenses are heavier than primes. |
 | collision-zero-product | useful_intervention | Can we move this conversation to Xero? |
 | collision-zero-literal | correct_abstention | The counter reset back to zero. |
-| collision-zero-sentence-start | incorrect_intervention | Xero tolerance policies rarely work. |
+| collision-zero-sentence-start | correct_abstention | Zero tolerance policies rarely work. |
 | collision-fire-product | useful_intervention | Can we move this conversation to Fyre? |
 | collision-fire-literal | correct_abstention | Please put out the fire before we leave. |
-| collision-fire-sentence-start | incorrect_intervention | Fyre drills happen every month here. |
+| collision-fire-sentence-start | correct_abstention | Fire drills happen every month here. |
 | collision-flicker-product | useful_intervention | Can we move this conversation to Flickr? |
 | collision-flicker-literal | correct_abstention | The candle started to flicker in the wind. |
-| collision-flicker-sentence-start | incorrect_intervention | Flickr is a common symptom of a loose bulb. |
+| collision-flicker-sentence-start | correct_abstention | Flicker is a common symptom of a loose bulb. |
 | nearmiss-fiverr | useful_intervention | Restart the Fiverr service. |
 | nearmiss-scribd | useful_intervention | Restart the Scribd service. |
 | plain-sarvam | useful_intervention | File a bug against Sarvam. |
@@ -66,6 +67,6 @@
 ## Outcome counts
 
 - useful_intervention: 32
-- correct_abstention: 20
-- incorrect_intervention: 6
-- missed_correction: 0
+- correct_abstention: 26
+- incorrect_intervention: 0
+- missed_correction: 1

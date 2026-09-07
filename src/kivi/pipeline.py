@@ -140,6 +140,23 @@ def _apply_memories(conn, dictation_id, formatted_text, memories) -> tuple[str, 
                                 f"'{m['canonical_form']}'. Leaving it alone."),
                     ))
                     continue
+                if _is_sentence_start(formatted_text, start):
+                    # Sentence-initial capitalization is required by English
+                    # orthography regardless of meaning, so it carries no
+                    # information here -- the lowercase-trust check above can
+                    # never fire at this position, and there is no other
+                    # signal available. Abstain rather than guess; --llm mode
+                    # can resolve this correctly because it can read the rest
+                    # of the sentence.
+                    decisions.append(Decision(
+                        token=token, action="abstained_common_word",
+                        memory_id=m["id"], confidence=m["confidence"],
+                        reason=(f"'{token}' is common English and starts the sentence, so "
+                                f"capitalization carries no signal here -- cannot tell "
+                                f"'{m['canonical_form']}' from the ordinary word without "
+                                "reading the rest of the sentence. Leaving it alone."),
+                    ))
+                    continue
             replacements.append((start, end, m["canonical_form"] + suffix))
             decisions.append(Decision(
                 token=token, action="applied",

@@ -1,16 +1,16 @@
 {
   "summary": {
-    "total_cases": 58,
+    "total_cases": 59,
     "outcomes": {
       "useful_intervention": 32,
-      "correct_abstention": 20,
-      "incorrect_intervention": 6,
-      "missed_correction": 0
+      "correct_abstention": 26,
+      "incorrect_intervention": 0,
+      "missed_correction": 1
     },
-    "intervention_precision": 0.842,
-    "intervention_recall": 1.0,
-    "avg_latency_ms": 0.7,
-    "max_latency_ms": 0.91,
+    "intervention_precision": 1.0,
+    "intervention_recall": 0.97,
+    "avg_latency_ms": 0.74,
+    "max_latency_ms": 1.44,
     "llm_calls": 0,
     "llm_cost_usd": 0.0,
     "db_size_bytes_after_seed_plus_one_dictation": 81920,
@@ -52,13 +52,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:28:58",
-          "updated_at": "2026-09-07 14:28:58",
-          "last_seen_at": "2026-09-07 14:28:58",
+          "created_at": "2026-09-07 15:28:24",
+          "updated_at": "2026-09-07 15:28:24",
+          "last_seen_at": "2026-09-07 15:28:24",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.72
+      "latency_ms": 0.71
     },
     {
       "id": "promoted-meera",
@@ -90,13 +90,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:28:58",
-          "updated_at": "2026-09-07 14:28:58",
-          "last_seen_at": "2026-09-07 14:28:58",
+          "created_at": "2026-09-07 15:28:24",
+          "updated_at": "2026-09-07 15:28:24",
+          "last_seen_at": "2026-09-07 15:28:24",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.73
+      "latency_ms": 0.79
     },
     {
       "id": "promoted-nikhil",
@@ -128,13 +128,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:28:58",
-          "updated_at": "2026-09-07 14:28:58",
-          "last_seen_at": "2026-09-07 14:28:58",
+          "created_at": "2026-09-07 15:28:24",
+          "updated_at": "2026-09-07 15:28:24",
+          "last_seen_at": "2026-09-07 15:28:24",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.71
+      "latency_ms": 0.7
     },
     {
       "id": "promoted-ananya",
@@ -166,13 +166,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:28:58",
-          "updated_at": "2026-09-07 14:28:58",
-          "last_seen_at": "2026-09-07 14:28:58",
+          "created_at": "2026-09-07 15:28:24",
+          "updated_at": "2026-09-07 15:28:24",
+          "last_seen_at": "2026-09-07 15:28:24",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.82
+      "latency_ms": 0.74
     },
     {
       "id": "promoted-sana",
@@ -204,13 +204,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:28:58",
-          "updated_at": "2026-09-07 14:28:58",
-          "last_seen_at": "2026-09-07 14:28:58",
+          "created_at": "2026-09-07 15:28:24",
+          "updated_at": "2026-09-07 15:28:24",
+          "last_seen_at": "2026-09-07 15:28:24",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.68
+      "latency_ms": 0.7
     },
     {
       "id": "promoted-arjun",
@@ -242,13 +242,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:28:58",
-          "updated_at": "2026-09-07 14:28:58",
-          "last_seen_at": "2026-09-07 14:28:58",
+          "created_at": "2026-09-07 15:28:24",
+          "updated_at": "2026-09-07 15:28:24",
+          "last_seen_at": "2026-09-07 15:28:24",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.71
+      "latency_ms": 0.92
     },
     {
       "id": "promoted-yash",
@@ -280,13 +280,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:28:58",
-          "updated_at": "2026-09-07 14:28:58",
-          "last_seen_at": "2026-09-07 14:28:58",
+          "created_at": "2026-09-07 15:28:24",
+          "updated_at": "2026-09-07 15:28:24",
+          "last_seen_at": "2026-09-07 15:28:24",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.69
+      "latency_ms": 0.7
     },
     {
       "id": "promoted-aarav",
@@ -318,13 +318,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:28:58",
-          "updated_at": "2026-09-07 14:28:58",
-          "last_seen_at": "2026-09-07 14:28:58",
+          "created_at": "2026-09-07 15:28:24",
+          "updated_at": "2026-09-07 15:28:24",
+          "last_seen_at": "2026-09-07 15:28:24",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.73
+      "latency_ms": 0.77
     },
     {
       "id": "promoted-kavya",
@@ -356,13 +356,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:28:58",
-          "updated_at": "2026-09-07 14:28:58",
-          "last_seen_at": "2026-09-07 14:28:58",
+          "created_at": "2026-09-07 15:28:24",
+          "updated_at": "2026-09-07 15:28:24",
+          "last_seen_at": "2026-09-07 15:28:24",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.68
+      "latency_ms": 0.71
     },
     {
       "id": "promoted-riya",
@@ -394,13 +394,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:28:58",
-          "updated_at": "2026-09-07 14:28:58",
-          "last_seen_at": "2026-09-07 14:28:58",
+          "created_at": "2026-09-07 15:28:24",
+          "updated_at": "2026-09-07 15:28:24",
+          "last_seen_at": "2026-09-07 15:28:24",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.76
+      "latency_ms": 0.79
     },
     {
       "id": "already-correct-priya",
@@ -432,9 +432,9 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:28:59",
-          "updated_at": "2026-09-07 14:28:59",
-          "last_seen_at": "2026-09-07 14:28:59",
+          "created_at": "2026-09-07 15:28:24",
+          "updated_at": "2026-09-07 15:28:24",
+          "last_seen_at": "2026-09-07 15:28:24",
           "correction_count": 0
         },
         {
@@ -446,13 +446,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:28:59",
-          "updated_at": "2026-09-07 14:28:59",
-          "last_seen_at": "2026-09-07 14:28:59",
+          "created_at": "2026-09-07 15:28:24",
+          "updated_at": "2026-09-07 15:28:24",
+          "last_seen_at": "2026-09-07 15:28:24",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.77
+      "latency_ms": 0.8
     },
     {
       "id": "already-correct-meera",
@@ -484,9 +484,9 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:28:59",
-          "updated_at": "2026-09-07 14:28:59",
-          "last_seen_at": "2026-09-07 14:28:59",
+          "created_at": "2026-09-07 15:28:24",
+          "updated_at": "2026-09-07 15:28:24",
+          "last_seen_at": "2026-09-07 15:28:24",
           "correction_count": 0
         },
         {
@@ -498,13 +498,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:28:59",
-          "updated_at": "2026-09-07 14:28:59",
-          "last_seen_at": "2026-09-07 14:28:59",
+          "created_at": "2026-09-07 15:28:24",
+          "updated_at": "2026-09-07 15:28:24",
+          "last_seen_at": "2026-09-07 15:28:24",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.7
+      "latency_ms": 0.71
     },
     {
       "id": "already-correct-nikhil",
@@ -536,9 +536,9 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:28:59",
-          "updated_at": "2026-09-07 14:28:59",
-          "last_seen_at": "2026-09-07 14:28:59",
+          "created_at": "2026-09-07 15:28:24",
+          "updated_at": "2026-09-07 15:28:24",
+          "last_seen_at": "2026-09-07 15:28:24",
           "correction_count": 0
         },
         {
@@ -550,13 +550,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:28:59",
-          "updated_at": "2026-09-07 14:28:59",
-          "last_seen_at": "2026-09-07 14:28:59",
+          "created_at": "2026-09-07 15:28:24",
+          "updated_at": "2026-09-07 15:28:24",
+          "last_seen_at": "2026-09-07 15:28:24",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.73
+      "latency_ms": 1.44
     },
     {
       "id": "already-correct-ananya",
@@ -588,9 +588,9 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:28:59",
-          "updated_at": "2026-09-07 14:28:59",
-          "last_seen_at": "2026-09-07 14:28:59",
+          "created_at": "2026-09-07 15:28:24",
+          "updated_at": "2026-09-07 15:28:24",
+          "last_seen_at": "2026-09-07 15:28:24",
           "correction_count": 0
         },
         {
@@ -602,23 +602,23 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:28:59",
-          "updated_at": "2026-09-07 14:28:59",
-          "last_seen_at": "2026-09-07 14:28:59",
+          "created_at": "2026-09-07 15:28:24",
+          "updated_at": "2026-09-07 15:28:24",
+          "last_seen_at": "2026-09-07 15:28:24",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.73
+      "latency_ms": 0.72
     },
     {
       "id": "corrected-aaditya",
       "name": "Explicit correction for 'Aaditya' fires on a fresh misspelling",
       "inputs": {
-        "raw_asr": "aditya mentioned the deadline moved to friday",
-        "formatted": "Aditya mentioned the deadline moved to Friday."
+        "raw_asr": "remind me to email aditya tomorrow",
+        "formatted": "Remind me to email Aditya tomorrow."
       },
-      "expected": "Aaditya mentioned the deadline moved to Friday.",
-      "actual": "Aaditya mentioned the deadline moved to Friday.",
+      "expected": "Remind me to email Aaditya tomorrow.",
+      "actual": "Remind me to email Aaditya tomorrow.",
       "should_intervene": true,
       "outcome": "useful_intervention",
       "decisions": [
@@ -628,13 +628,6 @@
           "reason": "'Aditya' phonetically matches active memory 'Aaditya' (confidence 0.95).",
           "confidence": 0.95,
           "replacement": "Aaditya"
-        },
-        {
-          "token": "Friday",
-          "action": "abstained_no_match",
-          "reason": "'Friday' looks like a personal term but no memory matches it.",
-          "confidence": null,
-          "replacement": null
         }
       ],
       "relevant_memory_state": [
@@ -647,23 +640,23 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 4,
-          "created_at": "2026-09-07 14:28:59",
-          "updated_at": "2026-09-07 14:28:59",
-          "last_seen_at": "2026-09-07 14:28:59",
+          "created_at": "2026-09-07 15:28:24",
+          "updated_at": "2026-09-07 15:28:24",
+          "last_seen_at": "2026-09-07 15:28:24",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.77
+      "latency_ms": 0.78
     },
     {
       "id": "corrected-ishaan",
       "name": "Explicit correction for 'Ishaan' fires on a fresh misspelling",
       "inputs": {
-        "raw_asr": "ishan mentioned the deadline moved to friday",
-        "formatted": "Ishan mentioned the deadline moved to Friday."
+        "raw_asr": "remind me to email ishan tomorrow",
+        "formatted": "Remind me to email Ishan tomorrow."
       },
-      "expected": "Ishaan mentioned the deadline moved to Friday.",
-      "actual": "Ishaan mentioned the deadline moved to Friday.",
+      "expected": "Remind me to email Ishaan tomorrow.",
+      "actual": "Remind me to email Ishaan tomorrow.",
       "should_intervene": true,
       "outcome": "useful_intervention",
       "decisions": [
@@ -673,13 +666,6 @@
           "reason": "'Ishan' phonetically matches active memory 'Ishaan' (confidence 0.95).",
           "confidence": 0.95,
           "replacement": "Ishaan"
-        },
-        {
-          "token": "Friday",
-          "action": "abstained_no_match",
-          "reason": "'Friday' looks like a personal term but no memory matches it.",
-          "confidence": null,
-          "replacement": null
         }
       ],
       "relevant_memory_state": [
@@ -692,23 +678,23 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 4,
-          "created_at": "2026-09-07 14:28:59",
-          "updated_at": "2026-09-07 14:28:59",
-          "last_seen_at": "2026-09-07 14:28:59",
+          "created_at": "2026-09-07 15:28:25",
+          "updated_at": "2026-09-07 15:28:25",
+          "last_seen_at": "2026-09-07 15:28:25",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.76
+      "latency_ms": 0.75
     },
     {
       "id": "corrected-vihaan",
       "name": "Explicit correction for 'Vihaan' fires on a fresh misspelling",
       "inputs": {
-        "raw_asr": "vihan mentioned the deadline moved to friday",
-        "formatted": "Vihan mentioned the deadline moved to Friday."
+        "raw_asr": "remind me to email vihan tomorrow",
+        "formatted": "Remind me to email Vihan tomorrow."
       },
-      "expected": "Vihaan mentioned the deadline moved to Friday.",
-      "actual": "Vihaan mentioned the deadline moved to Friday.",
+      "expected": "Remind me to email Vihaan tomorrow.",
+      "actual": "Remind me to email Vihaan tomorrow.",
       "should_intervene": true,
       "outcome": "useful_intervention",
       "decisions": [
@@ -718,13 +704,6 @@
           "reason": "'Vihan' phonetically matches active memory 'Vihaan' (confidence 0.95).",
           "confidence": 0.95,
           "replacement": "Vihaan"
-        },
-        {
-          "token": "Friday",
-          "action": "abstained_no_match",
-          "reason": "'Friday' looks like a personal term but no memory matches it.",
-          "confidence": null,
-          "replacement": null
         }
       ],
       "relevant_memory_state": [
@@ -737,23 +716,23 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 4,
-          "created_at": "2026-09-07 14:28:59",
-          "updated_at": "2026-09-07 14:28:59",
-          "last_seen_at": "2026-09-07 14:28:59",
+          "created_at": "2026-09-07 15:28:25",
+          "updated_at": "2026-09-07 15:28:25",
+          "last_seen_at": "2026-09-07 15:28:25",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.81
+      "latency_ms": 0.7
     },
     {
       "id": "corrected-simran",
       "name": "Explicit correction for 'Simran' fires on a fresh misspelling",
       "inputs": {
-        "raw_asr": "simren mentioned the deadline moved to friday",
-        "formatted": "Simren mentioned the deadline moved to Friday."
+        "raw_asr": "remind me to email simren tomorrow",
+        "formatted": "Remind me to email Simren tomorrow."
       },
-      "expected": "Simran mentioned the deadline moved to Friday.",
-      "actual": "Simran mentioned the deadline moved to Friday.",
+      "expected": "Remind me to email Simran tomorrow.",
+      "actual": "Remind me to email Simran tomorrow.",
       "should_intervene": true,
       "outcome": "useful_intervention",
       "decisions": [
@@ -763,13 +742,6 @@
           "reason": "'Simren' phonetically matches active memory 'Simran' (confidence 0.95).",
           "confidence": 0.95,
           "replacement": "Simran"
-        },
-        {
-          "token": "Friday",
-          "action": "abstained_no_match",
-          "reason": "'Friday' looks like a personal term but no memory matches it.",
-          "confidence": null,
-          "replacement": null
         }
       ],
       "relevant_memory_state": [
@@ -782,23 +754,23 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 4,
-          "created_at": "2026-09-07 14:28:59",
-          "updated_at": "2026-09-07 14:28:59",
-          "last_seen_at": "2026-09-07 14:28:59",
+          "created_at": "2026-09-07 15:28:25",
+          "updated_at": "2026-09-07 15:28:25",
+          "last_seen_at": "2026-09-07 15:28:25",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.73
+      "latency_ms": 0.97
     },
     {
       "id": "corrected-rohan",
       "name": "Explicit correction for 'Rohan' fires on a fresh misspelling",
       "inputs": {
-        "raw_asr": "rohaan mentioned the deadline moved to friday",
-        "formatted": "Rohaan mentioned the deadline moved to Friday."
+        "raw_asr": "remind me to email rohaan tomorrow",
+        "formatted": "Remind me to email Rohaan tomorrow."
       },
-      "expected": "Rohan mentioned the deadline moved to Friday.",
-      "actual": "Rohan mentioned the deadline moved to Friday.",
+      "expected": "Remind me to email Rohan tomorrow.",
+      "actual": "Remind me to email Rohan tomorrow.",
       "should_intervene": true,
       "outcome": "useful_intervention",
       "decisions": [
@@ -808,6 +780,82 @@
           "reason": "'Rohaan' phonetically matches active memory 'Rohan' (confidence 0.95).",
           "confidence": 0.95,
           "replacement": "Rohan"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 15,
+          "user_id": "default",
+          "canonical_form": "Rohan",
+          "phonetic_key": "RHN",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 4,
+          "created_at": "2026-09-07 15:28:25",
+          "updated_at": "2026-09-07 15:28:25",
+          "last_seen_at": "2026-09-07 15:28:25",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.74
+    },
+    {
+      "id": "corrected-diya",
+      "name": "Explicit correction for 'Diya' fires on a fresh misspelling",
+      "inputs": {
+        "raw_asr": "remind me to email dia tomorrow",
+        "formatted": "Remind me to email Dia tomorrow."
+      },
+      "expected": "Remind me to email Diya tomorrow.",
+      "actual": "Remind me to email Diya tomorrow.",
+      "should_intervene": true,
+      "outcome": "useful_intervention",
+      "decisions": [
+        {
+          "token": "Dia",
+          "action": "applied",
+          "reason": "'Dia' phonetically matches active memory 'Diya' (confidence 0.95).",
+          "confidence": 0.95,
+          "replacement": "Diya"
+        }
+      ],
+      "relevant_memory_state": [
+        {
+          "id": 16,
+          "user_id": "default",
+          "canonical_form": "Diya",
+          "phonetic_key": "TY",
+          "category": "unknown",
+          "status": "active",
+          "confidence": 0.95,
+          "evidence_count": 1,
+          "created_at": "2026-09-07 15:28:25",
+          "updated_at": "2026-09-07 15:28:25",
+          "last_seen_at": "2026-09-07 15:28:25",
+          "correction_count": 1
+        }
+      ],
+      "latency_ms": 0.59
+    },
+    {
+      "id": "corrected-name-sentence-start-tradeoff",
+      "name": "KNOWN TRADEOFF: correction-backed common-word name misses at sentence start (same information gap as the collision-product cases, opposite ground truth)",
+      "inputs": {
+        "raw_asr": "rohaan mentioned the deadline moved to friday",
+        "formatted": "Rohaan mentioned the deadline moved to Friday."
+      },
+      "expected": "Rohan mentioned the deadline moved to Friday.",
+      "actual": "Rohaan mentioned the deadline moved to Friday.",
+      "should_intervene": true,
+      "outcome": "missed_correction",
+      "decisions": [
+        {
+          "token": "Rohaan",
+          "action": "abstained_common_word",
+          "reason": "'Rohaan' is common English and starts the sentence, so capitalization carries no signal here -- cannot tell 'Rohan' from the ordinary word without reading the rest of the sentence. Leaving it alone.",
+          "confidence": 0.95,
+          "replacement": null
         },
         {
           "token": "Friday",
@@ -827,58 +875,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 4,
-          "created_at": "2026-09-07 14:28:59",
-          "updated_at": "2026-09-07 14:28:59",
-          "last_seen_at": "2026-09-07 14:28:59",
+          "created_at": "2026-09-07 15:28:25",
+          "updated_at": "2026-09-07 15:28:25",
+          "last_seen_at": "2026-09-07 15:28:25",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.83
-    },
-    {
-      "id": "corrected-diya",
-      "name": "Explicit correction for 'Diya' fires on a fresh misspelling",
-      "inputs": {
-        "raw_asr": "dia mentioned the deadline moved to friday",
-        "formatted": "Dia mentioned the deadline moved to Friday."
-      },
-      "expected": "Diya mentioned the deadline moved to Friday.",
-      "actual": "Diya mentioned the deadline moved to Friday.",
-      "should_intervene": true,
-      "outcome": "useful_intervention",
-      "decisions": [
-        {
-          "token": "Dia",
-          "action": "applied",
-          "reason": "'Dia' phonetically matches active memory 'Diya' (confidence 0.95).",
-          "confidence": 0.95,
-          "replacement": "Diya"
-        },
-        {
-          "token": "Friday",
-          "action": "abstained_no_match",
-          "reason": "'Friday' looks like a personal term but no memory matches it.",
-          "confidence": null,
-          "replacement": null
-        }
-      ],
-      "relevant_memory_state": [
-        {
-          "id": 16,
-          "user_id": "default",
-          "canonical_form": "Diya",
-          "phonetic_key": "TY",
-          "category": "unknown",
-          "status": "active",
-          "confidence": 0.95,
-          "evidence_count": 1,
-          "created_at": "2026-09-07 14:28:59",
-          "updated_at": "2026-09-07 14:28:59",
-          "last_seen_at": "2026-09-07 14:28:59",
-          "correction_count": 1
-        }
-      ],
-      "latency_ms": 0.67
+      "latency_ms": 0.79
     },
     {
       "id": "ambiguous-ankith",
@@ -910,13 +913,13 @@
           "status": "ambiguous",
           "confidence": 0.2,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:28:59",
-          "updated_at": "2026-09-07 14:28:59",
-          "last_seen_at": "2026-09-07 14:28:59",
+          "created_at": "2026-09-07 15:28:25",
+          "updated_at": "2026-09-07 15:28:25",
+          "last_seen_at": "2026-09-07 15:28:25",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.64
+      "latency_ms": 0.69
     },
     {
       "id": "ambiguous-kabir",
@@ -948,13 +951,13 @@
           "status": "ambiguous",
           "confidence": 0.2,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:28:59",
-          "updated_at": "2026-09-07 14:28:59",
-          "last_seen_at": "2026-09-07 14:28:59",
+          "created_at": "2026-09-07 15:28:25",
+          "updated_at": "2026-09-07 15:28:25",
+          "last_seen_at": "2026-09-07 15:28:25",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.67
+      "latency_ms": 0.69
     },
     {
       "id": "candidate-tanvi",
@@ -978,13 +981,13 @@
           "status": "candidate",
           "confidence": 0.2,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:28:59",
-          "updated_at": "2026-09-07 14:28:59",
-          "last_seen_at": "2026-09-07 14:28:59",
+          "created_at": "2026-09-07 15:28:25",
+          "updated_at": "2026-09-07 15:28:25",
+          "last_seen_at": "2026-09-07 15:28:25",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.62
+      "latency_ms": 0.76
     },
     {
       "id": "candidate-devansh",
@@ -1008,13 +1011,13 @@
           "status": "candidate",
           "confidence": 0.2,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:28:59",
-          "updated_at": "2026-09-07 14:28:59",
-          "last_seen_at": "2026-09-07 14:28:59",
+          "created_at": "2026-09-07 15:28:25",
+          "updated_at": "2026-09-07 15:28:25",
+          "last_seen_at": "2026-09-07 15:28:25",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.67
+      "latency_ms": 0.78
     },
     {
       "id": "collision-kiwi-product",
@@ -1046,13 +1049,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:28:59",
-          "updated_at": "2026-09-07 14:28:59",
-          "last_seen_at": "2026-09-07 14:28:59",
+          "created_at": "2026-09-07 15:28:25",
+          "updated_at": "2026-09-07 15:28:25",
+          "last_seen_at": "2026-09-07 15:28:25",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.83
+      "latency_ms": 1.06
     },
     {
       "id": "collision-kiwi-literal",
@@ -1091,9 +1094,9 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:28:59",
-          "updated_at": "2026-09-07 14:28:59",
-          "last_seen_at": "2026-09-07 14:28:59",
+          "created_at": "2026-09-07 15:28:25",
+          "updated_at": "2026-09-07 15:28:25",
+          "last_seen_at": "2026-09-07 15:28:25",
           "correction_count": 1
         },
         {
@@ -1105,13 +1108,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:28:59",
-          "updated_at": "2026-09-07 14:28:59",
-          "last_seen_at": "2026-09-07 14:28:59",
+          "created_at": "2026-09-07 15:28:25",
+          "updated_at": "2026-09-07 15:28:25",
+          "last_seen_at": "2026-09-07 15:28:25",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.6
+      "latency_ms": 0.64
     },
     {
       "id": "collision-kiwi-sentence-start",
@@ -1121,16 +1124,16 @@
         "formatted": "Kiwi is my favorite fruit."
       },
       "expected": "Kiwi is my favorite fruit.",
-      "actual": "Kivi is my favorite fruit.",
+      "actual": "Kiwi is my favorite fruit.",
       "should_intervene": false,
-      "outcome": "incorrect_intervention",
+      "outcome": "correct_abstention",
       "decisions": [
         {
           "token": "Kiwi",
-          "action": "applied",
-          "reason": "'Kiwi' phonetically matches active memory 'Kivi' (confidence 0.95).",
+          "action": "abstained_common_word",
+          "reason": "'Kiwi' is common English and starts the sentence, so capitalization carries no signal here -- cannot tell 'Kivi' from the ordinary word without reading the rest of the sentence. Leaving it alone.",
           "confidence": 0.95,
-          "replacement": "Kivi"
+          "replacement": null
         }
       ],
       "relevant_memory_state": [
@@ -1143,13 +1146,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:28:59",
-          "updated_at": "2026-09-07 14:28:59",
-          "last_seen_at": "2026-09-07 14:28:59",
+          "created_at": "2026-09-07 15:28:25",
+          "updated_at": "2026-09-07 15:28:25",
+          "last_seen_at": "2026-09-07 15:28:25",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.6
+      "latency_ms": 0.58
     },
     {
       "id": "collision-lift-product",
@@ -1181,13 +1184,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:28:59",
-          "updated_at": "2026-09-07 14:28:59",
-          "last_seen_at": "2026-09-07 14:28:59",
+          "created_at": "2026-09-07 15:28:25",
+          "updated_at": "2026-09-07 15:28:25",
+          "last_seen_at": "2026-09-07 15:28:25",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.69
+      "latency_ms": 0.7
     },
     {
       "id": "collision-lift-literal",
@@ -1219,13 +1222,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:29:00",
-          "updated_at": "2026-09-07 14:29:00",
-          "last_seen_at": "2026-09-07 14:29:00",
+          "created_at": "2026-09-07 15:28:25",
+          "updated_at": "2026-09-07 15:28:25",
+          "last_seen_at": "2026-09-07 15:28:25",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.61
+      "latency_ms": 0.63
     },
     {
       "id": "collision-lift-sentence-start",
@@ -1235,16 +1238,16 @@
         "formatted": "Lift with your legs, not your back."
       },
       "expected": "Lift with your legs, not your back.",
-      "actual": "Lyft with your legs, not your back.",
+      "actual": "Lift with your legs, not your back.",
       "should_intervene": false,
-      "outcome": "incorrect_intervention",
+      "outcome": "correct_abstention",
       "decisions": [
         {
           "token": "Lift",
-          "action": "applied",
-          "reason": "'Lift' phonetically matches active memory 'Lyft' (confidence 0.95).",
+          "action": "abstained_common_word",
+          "reason": "'Lift' is common English and starts the sentence, so capitalization carries no signal here -- cannot tell 'Lyft' from the ordinary word without reading the rest of the sentence. Leaving it alone.",
           "confidence": 0.95,
-          "replacement": "Lyft"
+          "replacement": null
         }
       ],
       "relevant_memory_state": [
@@ -1257,13 +1260,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:29:00",
-          "updated_at": "2026-09-07 14:29:00",
-          "last_seen_at": "2026-09-07 14:29:00",
+          "created_at": "2026-09-07 15:28:25",
+          "updated_at": "2026-09-07 15:28:25",
+          "last_seen_at": "2026-09-07 15:28:25",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.6
+      "latency_ms": 0.66
     },
     {
       "id": "collision-zoom-product",
@@ -1295,13 +1298,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:29:00",
-          "updated_at": "2026-09-07 14:29:00",
-          "last_seen_at": "2026-09-07 14:29:00",
+          "created_at": "2026-09-07 15:28:25",
+          "updated_at": "2026-09-07 15:28:25",
+          "last_seen_at": "2026-09-07 15:28:25",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.67
+      "latency_ms": 0.72
     },
     {
       "id": "collision-zoom-literal",
@@ -1333,9 +1336,9 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:29:00",
-          "updated_at": "2026-09-07 14:29:00",
-          "last_seen_at": "2026-09-07 14:29:00",
+          "created_at": "2026-09-07 15:28:25",
+          "updated_at": "2026-09-07 15:28:25",
+          "last_seen_at": "2026-09-07 15:28:25",
           "correction_count": 1
         }
       ],
@@ -1349,16 +1352,16 @@
         "formatted": "Zoom lenses are heavier than primes."
       },
       "expected": "Zoom lenses are heavier than primes.",
-      "actual": "Xoom lenses are heavier than primes.",
+      "actual": "Zoom lenses are heavier than primes.",
       "should_intervene": false,
-      "outcome": "incorrect_intervention",
+      "outcome": "correct_abstention",
       "decisions": [
         {
           "token": "Zoom",
-          "action": "applied",
-          "reason": "'Zoom' phonetically matches active memory 'Xoom' (confidence 0.95).",
+          "action": "abstained_common_word",
+          "reason": "'Zoom' is common English and starts the sentence, so capitalization carries no signal here -- cannot tell 'Xoom' from the ordinary word without reading the rest of the sentence. Leaving it alone.",
           "confidence": 0.95,
-          "replacement": "Xoom"
+          "replacement": null
         }
       ],
       "relevant_memory_state": [
@@ -1371,13 +1374,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:29:00",
-          "updated_at": "2026-09-07 14:29:00",
-          "last_seen_at": "2026-09-07 14:29:00",
+          "created_at": "2026-09-07 15:28:26",
+          "updated_at": "2026-09-07 15:28:26",
+          "last_seen_at": "2026-09-07 15:28:26",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.59
+      "latency_ms": 0.68
     },
     {
       "id": "collision-zero-product",
@@ -1409,13 +1412,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:29:00",
-          "updated_at": "2026-09-07 14:29:00",
-          "last_seen_at": "2026-09-07 14:29:00",
+          "created_at": "2026-09-07 15:28:26",
+          "updated_at": "2026-09-07 15:28:26",
+          "last_seen_at": "2026-09-07 15:28:26",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.68
+      "latency_ms": 0.66
     },
     {
       "id": "collision-zero-literal",
@@ -1447,13 +1450,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:29:00",
-          "updated_at": "2026-09-07 14:29:00",
-          "last_seen_at": "2026-09-07 14:29:00",
+          "created_at": "2026-09-07 15:28:26",
+          "updated_at": "2026-09-07 15:28:26",
+          "last_seen_at": "2026-09-07 15:28:26",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.57
+      "latency_ms": 0.67
     },
     {
       "id": "collision-zero-sentence-start",
@@ -1463,16 +1466,16 @@
         "formatted": "Zero tolerance policies rarely work."
       },
       "expected": "Zero tolerance policies rarely work.",
-      "actual": "Xero tolerance policies rarely work.",
+      "actual": "Zero tolerance policies rarely work.",
       "should_intervene": false,
-      "outcome": "incorrect_intervention",
+      "outcome": "correct_abstention",
       "decisions": [
         {
           "token": "Zero",
-          "action": "applied",
-          "reason": "'Zero' phonetically matches active memory 'Xero' (confidence 0.95).",
+          "action": "abstained_common_word",
+          "reason": "'Zero' is common English and starts the sentence, so capitalization carries no signal here -- cannot tell 'Xero' from the ordinary word without reading the rest of the sentence. Leaving it alone.",
           "confidence": 0.95,
-          "replacement": "Xero"
+          "replacement": null
         }
       ],
       "relevant_memory_state": [
@@ -1485,13 +1488,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:29:00",
-          "updated_at": "2026-09-07 14:29:00",
-          "last_seen_at": "2026-09-07 14:29:00",
+          "created_at": "2026-09-07 15:28:26",
+          "updated_at": "2026-09-07 15:28:26",
+          "last_seen_at": "2026-09-07 15:28:26",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.57
+      "latency_ms": 0.63
     },
     {
       "id": "collision-fire-product",
@@ -1523,13 +1526,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:29:00",
-          "updated_at": "2026-09-07 14:29:00",
-          "last_seen_at": "2026-09-07 14:29:00",
+          "created_at": "2026-09-07 15:28:26",
+          "updated_at": "2026-09-07 15:28:26",
+          "last_seen_at": "2026-09-07 15:28:26",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.69
+      "latency_ms": 0.7
     },
     {
       "id": "collision-fire-literal",
@@ -1561,13 +1564,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:29:00",
-          "updated_at": "2026-09-07 14:29:00",
-          "last_seen_at": "2026-09-07 14:29:00",
+          "created_at": "2026-09-07 15:28:26",
+          "updated_at": "2026-09-07 15:28:26",
+          "last_seen_at": "2026-09-07 15:28:26",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.64
+      "latency_ms": 0.69
     },
     {
       "id": "collision-fire-sentence-start",
@@ -1577,16 +1580,16 @@
         "formatted": "Fire drills happen every month here."
       },
       "expected": "Fire drills happen every month here.",
-      "actual": "Fyre drills happen every month here.",
+      "actual": "Fire drills happen every month here.",
       "should_intervene": false,
-      "outcome": "incorrect_intervention",
+      "outcome": "correct_abstention",
       "decisions": [
         {
           "token": "Fire",
-          "action": "applied",
-          "reason": "'Fire' phonetically matches active memory 'Fyre' (confidence 0.95).",
+          "action": "abstained_common_word",
+          "reason": "'Fire' is common English and starts the sentence, so capitalization carries no signal here -- cannot tell 'Fyre' from the ordinary word without reading the rest of the sentence. Leaving it alone.",
           "confidence": 0.95,
-          "replacement": "Fyre"
+          "replacement": null
         }
       ],
       "relevant_memory_state": [
@@ -1599,13 +1602,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:29:00",
-          "updated_at": "2026-09-07 14:29:00",
-          "last_seen_at": "2026-09-07 14:29:00",
+          "created_at": "2026-09-07 15:28:26",
+          "updated_at": "2026-09-07 15:28:26",
+          "last_seen_at": "2026-09-07 15:28:26",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.66
+      "latency_ms": 0.65
     },
     {
       "id": "collision-flicker-product",
@@ -1637,13 +1640,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:29:00",
-          "updated_at": "2026-09-07 14:29:00",
-          "last_seen_at": "2026-09-07 14:29:00",
+          "created_at": "2026-09-07 15:28:26",
+          "updated_at": "2026-09-07 15:28:26",
+          "last_seen_at": "2026-09-07 15:28:26",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.77
+      "latency_ms": 0.85
     },
     {
       "id": "collision-flicker-literal",
@@ -1675,13 +1678,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:29:00",
-          "updated_at": "2026-09-07 14:29:00",
-          "last_seen_at": "2026-09-07 14:29:00",
+          "created_at": "2026-09-07 15:28:26",
+          "updated_at": "2026-09-07 15:28:26",
+          "last_seen_at": "2026-09-07 15:28:26",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.65
+      "latency_ms": 0.68
     },
     {
       "id": "collision-flicker-sentence-start",
@@ -1691,16 +1694,16 @@
         "formatted": "Flicker is a common symptom of a loose bulb."
       },
       "expected": "Flicker is a common symptom of a loose bulb.",
-      "actual": "Flickr is a common symptom of a loose bulb.",
+      "actual": "Flicker is a common symptom of a loose bulb.",
       "should_intervene": false,
-      "outcome": "incorrect_intervention",
+      "outcome": "correct_abstention",
       "decisions": [
         {
           "token": "Flicker",
-          "action": "applied",
-          "reason": "'Flicker' phonetically matches active memory 'Flickr' (confidence 0.95).",
+          "action": "abstained_common_word",
+          "reason": "'Flicker' is common English and starts the sentence, so capitalization carries no signal here -- cannot tell 'Flickr' from the ordinary word without reading the rest of the sentence. Leaving it alone.",
           "confidence": 0.95,
-          "replacement": "Flickr"
+          "replacement": null
         }
       ],
       "relevant_memory_state": [
@@ -1713,13 +1716,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:29:00",
-          "updated_at": "2026-09-07 14:29:00",
-          "last_seen_at": "2026-09-07 14:29:00",
+          "created_at": "2026-09-07 15:28:26",
+          "updated_at": "2026-09-07 15:28:26",
+          "last_seen_at": "2026-09-07 15:28:26",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.91
+      "latency_ms": 0.87
     },
     {
       "id": "nearmiss-fiverr",
@@ -1751,13 +1754,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:29:00",
-          "updated_at": "2026-09-07 14:29:00",
-          "last_seen_at": "2026-09-07 14:29:00",
+          "created_at": "2026-09-07 15:28:26",
+          "updated_at": "2026-09-07 15:28:26",
+          "last_seen_at": "2026-09-07 15:28:26",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.83
+      "latency_ms": 0.7
     },
     {
       "id": "nearmiss-scribd",
@@ -1789,13 +1792,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:29:00",
-          "updated_at": "2026-09-07 14:29:00",
-          "last_seen_at": "2026-09-07 14:29:00",
+          "created_at": "2026-09-07 15:28:26",
+          "updated_at": "2026-09-07 15:28:26",
+          "last_seen_at": "2026-09-07 15:28:26",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.84
+      "latency_ms": 0.87
     },
     {
       "id": "plain-sarvam",
@@ -1827,13 +1830,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:29:00",
-          "updated_at": "2026-09-07 14:29:00",
-          "last_seen_at": "2026-09-07 14:29:00",
+          "created_at": "2026-09-07 15:28:26",
+          "updated_at": "2026-09-07 15:28:26",
+          "last_seen_at": "2026-09-07 15:28:26",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.71
+      "latency_ms": 0.81
     },
     {
       "id": "plain-figma",
@@ -1865,13 +1868,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:29:00",
-          "updated_at": "2026-09-07 14:29:00",
-          "last_seen_at": "2026-09-07 14:29:00",
+          "created_at": "2026-09-07 15:28:26",
+          "updated_at": "2026-09-07 15:28:26",
+          "last_seen_at": "2026-09-07 15:28:26",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.74
+      "latency_ms": 0.7
     },
     {
       "id": "plain-coda",
@@ -1903,13 +1906,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:29:00",
-          "updated_at": "2026-09-07 14:29:00",
-          "last_seen_at": "2026-09-07 14:29:00",
+          "created_at": "2026-09-07 15:28:26",
+          "updated_at": "2026-09-07 15:28:26",
+          "last_seen_at": "2026-09-07 15:28:26",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.81
+      "latency_ms": 1.03
     },
     {
       "id": "plain-asana",
@@ -1941,9 +1944,9 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:29:01",
-          "updated_at": "2026-09-07 14:29:01",
-          "last_seen_at": "2026-09-07 14:29:01",
+          "created_at": "2026-09-07 15:28:26",
+          "updated_at": "2026-09-07 15:28:26",
+          "last_seen_at": "2026-09-07 15:28:26",
           "correction_count": 0
         }
       ],
@@ -1979,13 +1982,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:29:01",
-          "updated_at": "2026-09-07 14:29:01",
-          "last_seen_at": "2026-09-07 14:29:01",
+          "created_at": "2026-09-07 15:28:27",
+          "updated_at": "2026-09-07 15:28:27",
+          "last_seen_at": "2026-09-07 15:28:27",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.74
+      "latency_ms": 0.73
     },
     {
       "id": "candidate-loom",
@@ -2009,13 +2012,13 @@
           "status": "candidate",
           "confidence": 0.2,
           "evidence_count": 1,
-          "created_at": "2026-09-07 14:29:01",
-          "updated_at": "2026-09-07 14:29:01",
-          "last_seen_at": "2026-09-07 14:29:01",
+          "created_at": "2026-09-07 15:28:27",
+          "updated_at": "2026-09-07 15:28:27",
+          "last_seen_at": "2026-09-07 15:28:27",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.64
+      "latency_ms": 0.88
     },
     {
       "id": "unknown-name",
@@ -2045,7 +2048,7 @@
         }
       ],
       "relevant_memory_state": [],
-      "latency_ms": 0.73
+      "latency_ms": 0.7
     },
     {
       "id": "common-word-plain",
@@ -2060,7 +2063,7 @@
       "outcome": "correct_abstention",
       "decisions": [],
       "relevant_memory_state": [],
-      "latency_ms": 0.66
+      "latency_ms": 0.65
     },
     {
       "id": "common-word-capitalized-no-memory",
@@ -2083,7 +2086,7 @@
         }
       ],
       "relevant_memory_state": [],
-      "latency_ms": 0.62
+      "latency_ms": 0.65
     },
     {
       "id": "possessive-fresh",
@@ -2107,13 +2110,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 4,
-          "created_at": "2026-09-07 14:29:01",
-          "updated_at": "2026-09-07 14:29:01",
-          "last_seen_at": "2026-09-07 14:29:01",
+          "created_at": "2026-09-07 15:28:27",
+          "updated_at": "2026-09-07 15:28:27",
+          "last_seen_at": "2026-09-07 15:28:27",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.67
+      "latency_ms": 0.65
     },
     {
       "id": "possessive-misspelled",
@@ -2145,13 +2148,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 4,
-          "created_at": "2026-09-07 14:29:01",
-          "updated_at": "2026-09-07 14:29:01",
-          "last_seen_at": "2026-09-07 14:29:01",
+          "created_at": "2026-09-07 15:28:27",
+          "updated_at": "2026-09-07 15:28:27",
+          "last_seen_at": "2026-09-07 15:28:27",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.65
+      "latency_ms": 0.58
     },
     {
       "id": "multi-token-name-and-product",
@@ -2190,9 +2193,9 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:29:01",
-          "updated_at": "2026-09-07 14:29:01",
-          "last_seen_at": "2026-09-07 14:29:01",
+          "created_at": "2026-09-07 15:28:27",
+          "updated_at": "2026-09-07 15:28:27",
+          "last_seen_at": "2026-09-07 15:28:27",
           "correction_count": 0
         },
         {
@@ -2204,13 +2207,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:29:01",
-          "updated_at": "2026-09-07 14:29:01",
-          "last_seen_at": "2026-09-07 14:29:01",
+          "created_at": "2026-09-07 15:28:27",
+          "updated_at": "2026-09-07 15:28:27",
+          "last_seen_at": "2026-09-07 15:28:27",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.78
+      "latency_ms": 0.84
     },
     {
       "id": "lowercase-name-uncapitalized",
@@ -2242,13 +2245,13 @@
           "status": "active",
           "confidence": 0.95,
           "evidence_count": 4,
-          "created_at": "2026-09-07 14:29:01",
-          "updated_at": "2026-09-07 14:29:01",
-          "last_seen_at": "2026-09-07 14:29:01",
+          "created_at": "2026-09-07 15:28:27",
+          "updated_at": "2026-09-07 15:28:27",
+          "last_seen_at": "2026-09-07 15:28:27",
           "correction_count": 1
         }
       ],
-      "latency_ms": 0.54
+      "latency_ms": 0.59
     },
     {
       "id": "exact-match-no-decision",
@@ -2272,13 +2275,13 @@
           "status": "active",
           "confidence": 0.75,
           "evidence_count": 3,
-          "created_at": "2026-09-07 14:29:01",
-          "updated_at": "2026-09-07 14:29:01",
-          "last_seen_at": "2026-09-07 14:29:01",
+          "created_at": "2026-09-07 15:28:27",
+          "updated_at": "2026-09-07 15:28:27",
+          "last_seen_at": "2026-09-07 15:28:27",
           "correction_count": 0
         }
       ],
-      "latency_ms": 0.72
+      "latency_ms": 0.54
     }
   ]
 }
